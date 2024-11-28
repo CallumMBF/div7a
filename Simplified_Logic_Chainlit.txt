@@ -1,0 +1,53 @@
+
+### Simplified Logic from Chainlit Application
+
+1. **Enquiry Type Selection:**
+   - Loan from a private company to a shareholder or associate (Loan logic applies)
+   - Payment from a private company to a shareholder or associate (Payment logic applies)
+   - Debt owed by a shareholder or associate to a private company (Debt logic applies)
+
+2. **Loan Logic:**
+   - If loan is fully repaid by lodgment day => No dividend under Division 7A.
+   - If not repaid:
+     - Was the loan made during winding-up?:
+       - If yes, and within the same year => No dividend.
+       - If yes, but after specified year, and fully repaid later => No dividend.
+       - Otherwise => Dividend applies.
+     - Was the loan made in ordinary business terms?:
+       - If yes => No dividend.
+       - Otherwise:
+         - Loan solely for acquiring qualifying shares?:
+           - If yes => No dividend.
+           - Otherwise:
+             - Included in assessable income? => No dividend.
+             - Specifically excluded from assessable income? => No dividend.
+             - Written loan agreement before lodgment day?:
+               - If yes, with compliant interest rate => No dividend.
+               - Otherwise => Dividend.
+
+3. **Payment Logic:**
+   - If payment to shareholder as employee => No dividend.
+   - If not, was payment for genuine debt? => No dividend.
+   - Included in assessable income? => No dividend.
+   - Specifically excluded from assessable income? => No dividend.
+   - Distribution during winding-up? => No dividend.
+   - Converted to loan? => No dividend.
+   - Otherwise => Dividend.
+
+4. **Debt Logic:**
+   - Was the debt obligation released or waived?:
+     - If yes => Dividend (Debt forgiven).
+   - Agreement to cease obligation without obligation?:
+     - If yes => Dividend (Debt forgiven).
+   - Subscription for shares to discharge debt?:
+     - If yes => Dividend (Debt forgiven).
+   - Debt parking arrangement?:
+     - If yes => Dividend (Debt forgiven).
+   - Company no longer insisting on repayment?:
+     - If yes => Dividend (Debt forgiven).
+     - Otherwise => No dividend.
+
+### Notes:
+- Decision paths are fully accounted for with `Yes` or `No` answers leading to the next logical step.
+- For every scenario, specific actions lead to either a dividend or no dividend declaration.
+

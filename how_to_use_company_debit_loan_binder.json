@@ -1,0 +1,112 @@
+{
+  "article": {
+    "title": "[AU] How to use the Company Debit Loan binder (Division 7a - Active)",
+    "intro": {
+      "Article Objective": "To assist users in navigating the Active Platform to effectively use the Company Debit Loan binder to prepare standard compliance jobs.",
+      "Context": "The Company Debit Loan binder is designed to calculate the minimum yearly repayments on a shareholders loan and calculating the company’s distributable surplus. Please refer to the Glossary for definitions of key terms used in this article."
+    },
+    "sections": [
+      {
+        "heading": "TABLE OF CONTENTS",
+        "content": [
+          "How to access the binder",
+          "Using the Company Debit Loan binder",
+          "Using the Div7a Calculator worksheet",
+          "If the loan commenced during the current financial year (e.g. year of the loan)",
+          "If the loan commenced in the previous year (e.g. 7 years remaining term)",
+          "If it was the second or subsequent year after the loan was made (e.g. 6 or less years remaining term)",
+          "Minimum repayments",
+          "Using the loan summary worksheet",
+          "Using the distributable surplus worksheet",
+          "How to insert the worksheets in the Company Debit Loan binder against Div7a balances in the Accounts & Tax binder",
+          "Templates available in the Division 7A starter"
+        ]
+      },
+      {
+        "heading": "How to access the binder",
+        "content": "To use the Division 7A calculator, create a new binder selecting 'Company Debit Loan' - see the knowledge article: How to create a binder, for more information. Note: Ensure you create a binder for the correct financial year that you wish to calculate the loan for. The date selected for the binder will automatically select the correct benchmark interest rate. This will also affect the interest rates used for the minimum repayments."
+      },
+      {
+        "heading": "Using the Company Debit Loan binder",
+        "content": "When the binder is opened in Excel, the 'D03 Company Debit Loan Summary' record template is automatically inserted into the binder. This acts as a summary worksheet for all Division 7a loans. The Div7A Calculator worksheet determines the interest and minimum repayments for the financial year on shareholder loans."
+      },
+      {
+        "heading": "Adding the Div7a Calculator worksheet",
+        "content": [
+          "To add the record template, 'G31 Div 7a Calculator', you have two options:",
+          "1. Add the record template against the loan directly and select the loan as the reconciliation field (recommended). For more information regarding how to add a record template, see the knowledge article: How to link various records to a binder.",
+          "Note: We recommend you choose to rollover the record template so when you are preparing the work next financial year, the loan balances will automatically rollover into the worksheet.",
+          "2. 'Accept' the recommendation in the Summary section of the index sheet. You will be prompted to name the worksheet - we recommend you use the name of the loan."
+        ]
+      },
+      {
+        "heading": "Using the Div7a Calculator worksheet",
+        "subsections": [
+          {
+            "subheading": "If the loan commenced during the current financial year (e.g. year of the loan)",
+            "content": "In the worksheet, enter the loan details: whether the loan is secured or unsecured, the income year of the loan, the term of the loan (maximum of 25 years or 7 years for any other loan), the balance per the ledger (if you have chosen to add the record in the Summary section of the binder instead of against the loan itself). Enter the dates and amounts in the 'Transactions for the Year' section in the worksheet. Note: No interest is payable and no minimum repayment is required to be paid in the respect of the year the loan is made."
+          },
+          {
+            "subheading": "If the loan commenced in the previous year (e.g. 7 years remaining term)",
+            "content": "In the worksheet, enter the loan details: whether the loan is secured or unsecured, the income year of the loan, the term of the loan (maximum of 25 years or 7 years for any other loan), the sum of the loans made in FY2022 year before any repayments were made (this will automatically prefill if the worksheet was selected to be rolled over the year before), the lodgement date, the balance per the ledger (if you have chosen to add the record in the Summary section of the binder instead of against the loan itself). Enter the balance of the previous year in the 'Sum of the Loans Made in FY2022 Year Before any Repayments were Made' line (if you did not elect to rollover last year), and any repayments made in the 'Transactions for the Year' section. Note: It is essential that a lodgement date is input for this scenario."
+          },
+          {
+            "subheading": "If it was the second or subsequent year after the loan was made (e.g. 6 or less years remaining term)",
+            "content": "In the worksheet, enter the loan details: whether the loan is secured or unsecured, the income year of the loan, the term of the loan (maximum of 25 years or 7 years for any other loan), the amount of the loan not repaid by the end of the prior year (this will automatically prefill if the worksheet was selected to be rolled over the year before), the lodgement date, if applicable, the balance per the ledger (if you have chosen to add the record in the Summary section of the binder instead of against the loan itself). Enter the balance of the previous year in the 'Amount of the Loan Not Repaid by the End of the Prior Year' line, and any repayments made in the 'Transactions for the Year' section."
+          }
+        ]
+      },
+      {
+        "heading": "Minimum repayments",
+        "content": "The 'Minimum Repayment Calculator' section of the worksheet gives you the minimum repayment required for the current year, as well as future years based on the current year's interest rate. WARNING: Each year must have its own worksheet. You should NOT enter any transactions for the current year if you have entered a balance for any prior years."
+      },
+      {
+        "heading": "Using the loan summary worksheet",
+        "content": "To show a summary of all loans, navigate to 'D03 Company Debit Loan Summary' and right-click anywhere along the top of the task pane, clicking Refresh. This will bring through the opening balance, payments made, interest, minimum repayments, and the closing balance for each separate loan, as well as a total for all loans."
+      },
+      {
+        "heading": "Using the distributable surplus worksheet",
+        "content": "To calculate the distributable surplus, insert the 'D06 Distributable Surplus' worksheet in the Summary Worksheets section of the index. Enter the relevant details into the 'Distributable surplus' section of the worksheet. There are notes below this section in the worksheet to describe the different line items."
+      },
+      {
+        "heading": "How to insert the worksheets in the Company Debit Loan binder against Div7a balances in the Accounts & Tax binder",
+        "content": "Navigate to the relevant Accounts & Tax binder for the client and open it in Excel. As you would add any other record, select the plus icon to the right of the account. The below pop-up screen will appear, select Link to External Value, External Field. Search for the relevant Company Debit Loan binder and select it. Select the relevant worksheet you wish to reference against the account. Click on the reconciliation value. Input the record title and confirm the reconciliation details are correct. Select Save and Close. This worksheet will populate against the loan account and show a green tick if the amounts reconcile."
+      },
+      {
+        "heading": "Templates available in the Division 7A starter",
+        "content": [
+          {
+            "Reference": "CL3B",
+            "Name": "Tools & Calculators Checklist - Company Debit Loan",
+            "Section": "Overview"
+          },
+          {
+            "Reference": "D06",
+            "Name": "Distributable Surplus",
+            "Section": "Summary Worksheets"
+          },
+          {
+            "Reference": "G31",
+            "Name": "Div 7A Calculator",
+            "Section": "Summary Worksheets"
+          },
+          {
+            "Reference": "D08",
+            "Name": "UPE Repayment Calculator",
+            "Section": "Summary Worksheets"
+          },
+          {
+            "Reference": "Z01",
+            "Name": "Spare Worksheet - Blank",
+            "Section": "ALL"
+          },
+          {
+            "Reference": "Z02",
+            "Name": "Spare Worksheet - List",
+            "Section": "ALL"
+          }
+        ]
+      }
+    ]
+  }
+}

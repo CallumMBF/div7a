@@ -1,0 +1,52 @@
+{
+  "article": {
+    "title": "[AU] How to use the Div 7a Calculator record template",
+    "intro": {
+      "Article Objective": "To assist users in navigating the Active Platform to effectively use the Div 7a Calculator record template when preparing a standard compliance job.",
+      "Context": "The Div 7a Calculator is designed to calculate the minimum yearly repayments and interest on a shareholders loan. Please refer to the Glossary for definitions of key terms used in this article."
+    },
+    "sections": [
+      {
+        "heading": "TABLE OF CONTENTS",
+        "content": [
+          "How to access the binder",
+          "Using the Accounts & Tax binder",
+          "Using the Div7a Calculator worksheet",
+          "If the loan commenced during the current financial year (e.g. year of the loan)",
+          "If the loan commenced in the previous year (e.g. 7 years remaining term)",
+          "If it was the second or subsequent year after the loan was made (e.g. 6 or less years remaining term)",
+          "Minimum repayments"
+        ]
+      },
+      {
+        "heading": "How to access the binder",
+        "content": "To use the Div 7A Calculator, create a new binder selecting 'Accounts & Tax' - see the knowledge article: How to create a binder, for more information. Note: Ensure you create a binder for the correct financial year that you wish to calculate the loan for. The date selected for the binder will automatically select the correct benchmark interest rate. This will also affect the interest rates used for the minimum repayments."
+      },
+      {
+        "heading": "Using the Accounts & Tax binder",
+        "content": "When the binder is opened in Excel, add the Div7A Calculator worksheet against the loan account. To do this, add 'G31 Div 7a Calculator' against the loan directly and select the loan as the reconciliation field. For more information regarding how to add a record template, see the knowledge article: How to link various records to a binder. Note: We recommend you choose to rollover the record template so when you are preparing the work next financial year, the loan balances will automatically rollover into the worksheet."
+      },
+      {
+        "heading": "Using the Div7a Calculator worksheet",
+        "subsections": [
+          {
+            "subheading": "If the loan commenced during the current financial year (e.g. year of the loan)",
+            "content": "In the worksheet, enter the loan details: whether the loan is secured or unsecured, the income year of the loan, the term of the loan (maximum of 25 years or 7 years for any other loan). Enter the dates and amounts in the 'Transactions for the Year' section in the worksheet. Note: No interest is payable and no minimum repayment is required to be paid in the respect of the year the loan is made."
+          },
+          {
+            "subheading": "If the loan commenced in the previous year (e.g. 7 years remaining term)",
+            "content": "In the worksheet, enter the loan details: whether the loan is secured or unsecured, the income year of the loan, the term of the loan (maximum of 25 years or 7 years for any other loan), the sum of the loans made in FY2022 year before any repayments were made (this will automatically prefill if the worksheet was selected to be rolled over the year before), the lodgement date. Enter the balance of the previous year in the 'Sum of the Loans Made in FY2022 Year Before any Repayments were Made' line (if you did not elect to rollover last year), and any repayments made in the 'Transactions for the Year' section. Note: It is essential that a lodgement date is input for this scenario. If any repayments are made prior to the lodgement date, while interest will still be charged, it will decrease the balance used to calculate the minimum repayment for the current year, hence reducing this amount."
+          },
+          {
+            "subheading": "If it was the second or subsequent year after the loan was made (e.g. 6 or less years remaining term)",
+            "content": "In the worksheet, enter the loan details: whether the loan is secured or unsecured, the income year of the loan, the term of the loan (maximum of 25 years or 7 years for any other loan), the amount of the loan not repaid by the end of the prior year (this will automatically prefill if the worksheet was selected to be rolled over the year before), the lodgement date, if applicable. Enter the balance of the previous year in the 'Amount of the Loan Not Repaid by the End of the Prior Year' line, and any repayments made in the 'Transactions for the Year' section."
+          }
+        ]
+      },
+      {
+        "heading": "Minimum repayments",
+        "content": "The 'Minimum Repayment Calculator' section of the worksheet gives you the minimum repayment required for the current year, as well as future years based on the current year's interest rate. WARNING: Each year must have its own worksheet. You should NOT enter any transactions for the current year if you have entered a balance for any prior years."
+      }
+    ]
+  }
+}
