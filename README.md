@@ -1,7 +1,7 @@
 ```mermaid
 graph TD
     A[Account from Trial Balance] --> B{Check Div 7A Account Type}
-    B -->|Not a Div 7A Account type| C[No Div7A Check Required<br>Probability = 0.0]
+    B -->|Not a Div 7A Account type| C[ℹ️ No Div7A Check Required<br>Probability = 0.0]
     
     B -->|Is a Div 7A Account type| D[LLM Analysis of Account Name]
     D --> E[Initial Probability Score 0.0-1.0]
@@ -13,7 +13,7 @@ graph TD
     G --> I{Check Workpaper Records}
     H --> I
     
-    I -->|Contains 'div 7a' terms| J[Set Probability = 1.0<br>Already contains Div 7A record]
+    I -->|Contains 'div 7a' terms| J[Set Probability = 1.0<br>✅ Already contains Div 7A record]
     
     I -->|No div 7a terms| K{Check Account Type}
     
@@ -27,8 +27,7 @@ graph TD
     N --> P
     O --> P
     
-    P -->|Probability >= 0.5| Q[High Risk - Warning Required]
-    P -->|Probability < 0.5| R[Low Risk - No Warning]
+    P -->|Probability >= 0.5| Q[⚠️ High Risk - Warning Required] 
     
-    Q --> S[Display Results<br>⚠️/ℹ️/✅ Indicator]
-    R --> S
+    P -->|Probability < 0.5| T[✅ Low Risk - No Warning]
+
