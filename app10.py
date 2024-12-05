@@ -111,7 +111,7 @@ def check_div7a_status(account_type, balance, workpaper_record, initial_probabil
     probability = initial_probability
     
     # Check for existing Division 7A documentation
-    if any(term in workpaper_record for term in ['div 7a', 'division 7a']):
+    if any(term in workpaper_record for term in ['div 7a', 'division 7a', 'div. 7a', 'div7a']):
         return 1.0, "Div 7A reconciliation worksheet already attached", False
     
     # Adjust probability based on account type and balance
