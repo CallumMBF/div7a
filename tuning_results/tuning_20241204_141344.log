@@ -1,3 +1,0 @@
-2024-12-04 14:13:44,809 - INFO - Starting hyperparameter tuning
-2024-12-04 14:13:45,122 - INFO - Testing parameters 1/1: {'vague_adjustment': 0.2, 'debit_liability_adjustment': 0.2, 'probability_threshold': 0.5}
-2024-12-04 14:13:45,122 - ERROR - Error during tuning: 'NoneType' object has no attribute 'lower'

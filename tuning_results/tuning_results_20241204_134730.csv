@@ -1,2 +1,0 @@
-vague_adjustment,debit_liability_adjustment,probability_threshold,precision,recall,f1,std_dev
-0.2,0.2,0.5,1.0,0.7304347826086955,0.8428116803637,0.04057165978054232
