@@ -1,0 +1,1153 @@
+2024-12-05 11:35:33,896 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 11:35:34,357 - INFO - Found 88 Division 7A accounts out of 497 total accounts
+2024-12-05 11:35:34,358 - INFO - Testing combination 1/25: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'batch_size': 200}
+2024-12-05 11:35:36,167 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:36,181 - INFO - Batch statistics:
+2024-12-05 11:35:36,182 - INFO - Average probability: 0.021
+2024-12-05 11:35:36,182 - INFO - Max probability: 0.400
+2024-12-05 11:35:36,182 - INFO - Min probability: 0.000
+2024-12-05 11:35:36,183 - INFO - Fold 1 statistics:
+2024-12-05 11:35:36,183 - INFO - Total samples: 100
+2024-12-05 11:35:36,183 - INFO - True positives in fold: 25
+2024-12-05 11:35:36,184 - INFO - Predicted positives: 1
+2024-12-05 11:35:37,695 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:37,705 - INFO - Batch statistics:
+2024-12-05 11:35:37,705 - INFO - Average probability: 0.012
+2024-12-05 11:35:37,705 - INFO - Max probability: 0.200
+2024-12-05 11:35:37,706 - INFO - Min probability: 0.000
+2024-12-05 11:35:37,706 - INFO - Fold 2 statistics:
+2024-12-05 11:35:37,706 - INFO - Total samples: 100
+2024-12-05 11:35:37,706 - INFO - True positives in fold: 22
+2024-12-05 11:35:37,707 - INFO - Predicted positives: 0
+2024-12-05 11:35:39,465 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:39,474 - INFO - Batch statistics:
+2024-12-05 11:35:39,475 - INFO - Average probability: 0.011
+2024-12-05 11:35:39,475 - INFO - Max probability: 0.400
+2024-12-05 11:35:39,475 - INFO - Min probability: 0.000
+2024-12-05 11:35:39,476 - INFO - Fold 3 statistics:
+2024-12-05 11:35:39,476 - INFO - Total samples: 99
+2024-12-05 11:35:39,476 - INFO - True positives in fold: 7
+2024-12-05 11:35:39,477 - INFO - Predicted positives: 1
+2024-12-05 11:35:41,294 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:41,303 - INFO - Batch statistics:
+2024-12-05 11:35:41,304 - INFO - Average probability: 0.019
+2024-12-05 11:35:41,304 - INFO - Max probability: 0.700
+2024-12-05 11:35:41,304 - INFO - Min probability: 0.000
+2024-12-05 11:35:41,305 - INFO - Fold 4 statistics:
+2024-12-05 11:35:41,305 - INFO - Total samples: 99
+2024-12-05 11:35:41,305 - INFO - True positives in fold: 18
+2024-12-05 11:35:41,306 - INFO - Predicted positives: 2
+2024-12-05 11:35:43,012 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:43,021 - INFO - Batch statistics:
+2024-12-05 11:35:43,021 - INFO - Average probability: 0.038
+2024-12-05 11:35:43,022 - INFO - Max probability: 1.000
+2024-12-05 11:35:43,022 - INFO - Min probability: 0.000
+2024-12-05 11:35:43,023 - INFO - Fold 5 statistics:
+2024-12-05 11:35:43,023 - INFO - Total samples: 99
+2024-12-05 11:35:43,023 - INFO - True positives in fold: 16
+2024-12-05 11:35:43,023 - INFO - Predicted positives: 4
+2024-12-05 11:35:43,034 - INFO - Testing combination 2/25: {'debit_adjustment': 0.1, 'probability_threshold': 0.5, 'batch_size': 200}
+2024-12-05 11:35:44,727 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:44,735 - INFO - Batch statistics:
+2024-12-05 11:35:44,735 - INFO - Average probability: 0.021
+2024-12-05 11:35:44,736 - INFO - Max probability: 0.400
+2024-12-05 11:35:44,736 - INFO - Min probability: 0.000
+2024-12-05 11:35:44,736 - INFO - Fold 1 statistics:
+2024-12-05 11:35:44,737 - INFO - Total samples: 100
+2024-12-05 11:35:44,737 - INFO - True positives in fold: 25
+2024-12-05 11:35:44,738 - INFO - Predicted positives: 0
+2024-12-05 11:35:46,391 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:46,403 - INFO - Batch statistics:
+2024-12-05 11:35:46,404 - INFO - Average probability: 0.012
+2024-12-05 11:35:46,404 - INFO - Max probability: 0.200
+2024-12-05 11:35:46,405 - INFO - Min probability: 0.000
+2024-12-05 11:35:46,405 - INFO - Fold 2 statistics:
+2024-12-05 11:35:46,405 - INFO - Total samples: 100
+2024-12-05 11:35:46,406 - INFO - True positives in fold: 22
+2024-12-05 11:35:46,406 - INFO - Predicted positives: 0
+2024-12-05 11:35:47,935 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:47,944 - INFO - Batch statistics:
+2024-12-05 11:35:47,944 - INFO - Average probability: 0.011
+2024-12-05 11:35:47,945 - INFO - Max probability: 0.400
+2024-12-05 11:35:47,945 - INFO - Min probability: 0.000
+2024-12-05 11:35:47,946 - INFO - Fold 3 statistics:
+2024-12-05 11:35:47,946 - INFO - Total samples: 99
+2024-12-05 11:35:47,946 - INFO - True positives in fold: 7
+2024-12-05 11:35:47,947 - INFO - Predicted positives: 0
+2024-12-05 11:35:49,701 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:49,711 - INFO - Batch statistics:
+2024-12-05 11:35:49,711 - INFO - Average probability: 0.021
+2024-12-05 11:35:49,711 - INFO - Max probability: 0.700
+2024-12-05 11:35:49,712 - INFO - Min probability: 0.000
+2024-12-05 11:35:49,712 - INFO - Fold 4 statistics:
+2024-12-05 11:35:49,713 - INFO - Total samples: 99
+2024-12-05 11:35:49,713 - INFO - True positives in fold: 18
+2024-12-05 11:35:49,713 - INFO - Predicted positives: 1
+2024-12-05 11:35:51,428 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:51,437 - INFO - Batch statistics:
+2024-12-05 11:35:51,437 - INFO - Average probability: 0.038
+2024-12-05 11:35:51,437 - INFO - Max probability: 1.000
+2024-12-05 11:35:51,438 - INFO - Min probability: 0.000
+2024-12-05 11:35:51,438 - INFO - Fold 5 statistics:
+2024-12-05 11:35:51,438 - INFO - Total samples: 99
+2024-12-05 11:35:51,439 - INFO - True positives in fold: 16
+2024-12-05 11:35:51,439 - INFO - Predicted positives: 4
+2024-12-05 11:35:51,448 - INFO - Testing combination 3/25: {'debit_adjustment': 0.1, 'probability_threshold': 0.6, 'batch_size': 200}
+2024-12-05 11:35:53,074 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:53,083 - INFO - Batch statistics:
+2024-12-05 11:35:53,084 - INFO - Average probability: 0.021
+2024-12-05 11:35:53,084 - INFO - Max probability: 0.400
+2024-12-05 11:35:53,085 - INFO - Min probability: 0.000
+2024-12-05 11:35:53,085 - INFO - Fold 1 statistics:
+2024-12-05 11:35:53,085 - INFO - Total samples: 100
+2024-12-05 11:35:53,086 - INFO - True positives in fold: 25
+2024-12-05 11:35:53,086 - INFO - Predicted positives: 0
+2024-12-05 11:35:54,784 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:54,792 - INFO - Batch statistics:
+2024-12-05 11:35:54,792 - INFO - Average probability: 0.016
+2024-12-05 11:35:54,792 - INFO - Max probability: 0.500
+2024-12-05 11:35:54,793 - INFO - Min probability: 0.000
+2024-12-05 11:35:54,793 - INFO - Fold 2 statistics:
+2024-12-05 11:35:54,793 - INFO - Total samples: 100
+2024-12-05 11:35:54,794 - INFO - True positives in fold: 22
+2024-12-05 11:35:54,794 - INFO - Predicted positives: 0
+2024-12-05 11:35:56,744 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:56,756 - INFO - Batch statistics:
+2024-12-05 11:35:56,757 - INFO - Average probability: 0.011
+2024-12-05 11:35:56,757 - INFO - Max probability: 0.400
+2024-12-05 11:35:56,757 - INFO - Min probability: 0.000
+2024-12-05 11:35:56,758 - INFO - Fold 3 statistics:
+2024-12-05 11:35:56,758 - INFO - Total samples: 99
+2024-12-05 11:35:56,759 - INFO - True positives in fold: 7
+2024-12-05 11:35:56,759 - INFO - Predicted positives: 0
+2024-12-05 11:35:58,585 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:35:58,593 - INFO - Batch statistics:
+2024-12-05 11:35:58,593 - INFO - Average probability: 0.021
+2024-12-05 11:35:58,593 - INFO - Max probability: 0.900
+2024-12-05 11:35:58,594 - INFO - Min probability: 0.000
+2024-12-05 11:35:58,594 - INFO - Fold 4 statistics:
+2024-12-05 11:35:58,595 - INFO - Total samples: 99
+2024-12-05 11:35:58,595 - INFO - True positives in fold: 18
+2024-12-05 11:35:58,595 - INFO - Predicted positives: 1
+2024-12-05 11:36:00,310 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:00,318 - INFO - Batch statistics:
+2024-12-05 11:36:00,318 - INFO - Average probability: 0.038
+2024-12-05 11:36:00,319 - INFO - Max probability: 1.000
+2024-12-05 11:36:00,319 - INFO - Min probability: 0.000
+2024-12-05 11:36:00,319 - INFO - Fold 5 statistics:
+2024-12-05 11:36:00,320 - INFO - Total samples: 99
+2024-12-05 11:36:00,320 - INFO - True positives in fold: 16
+2024-12-05 11:36:00,320 - INFO - Predicted positives: 3
+2024-12-05 11:36:00,329 - INFO - Testing combination 4/25: {'debit_adjustment': 0.1, 'probability_threshold': 0.7, 'batch_size': 200}
+2024-12-05 11:36:01,921 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:01,929 - INFO - Batch statistics:
+2024-12-05 11:36:01,930 - INFO - Average probability: 0.021
+2024-12-05 11:36:01,930 - INFO - Max probability: 0.400
+2024-12-05 11:36:01,930 - INFO - Min probability: 0.000
+2024-12-05 11:36:01,931 - INFO - Fold 1 statistics:
+2024-12-05 11:36:01,931 - INFO - Total samples: 100
+2024-12-05 11:36:01,931 - INFO - True positives in fold: 25
+2024-12-05 11:36:01,932 - INFO - Predicted positives: 0
+2024-12-05 11:36:04,525 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:04,532 - INFO - Batch statistics:
+2024-12-05 11:36:04,533 - INFO - Average probability: 0.016
+2024-12-05 11:36:04,533 - INFO - Max probability: 0.500
+2024-12-05 11:36:04,533 - INFO - Min probability: 0.000
+2024-12-05 11:36:04,534 - INFO - Fold 2 statistics:
+2024-12-05 11:36:04,534 - INFO - Total samples: 100
+2024-12-05 11:36:04,534 - INFO - True positives in fold: 22
+2024-12-05 11:36:04,535 - INFO - Predicted positives: 0
+2024-12-05 11:36:06,284 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:06,292 - INFO - Batch statistics:
+2024-12-05 11:36:06,292 - INFO - Average probability: 0.011
+2024-12-05 11:36:06,292 - INFO - Max probability: 0.400
+2024-12-05 11:36:06,293 - INFO - Min probability: 0.000
+2024-12-05 11:36:06,293 - INFO - Fold 3 statistics:
+2024-12-05 11:36:06,293 - INFO - Total samples: 99
+2024-12-05 11:36:06,294 - INFO - True positives in fold: 7
+2024-12-05 11:36:06,294 - INFO - Predicted positives: 0
+2024-12-05 11:36:08,210 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:08,220 - INFO - Batch statistics:
+2024-12-05 11:36:08,220 - INFO - Average probability: 0.019
+2024-12-05 11:36:08,221 - INFO - Max probability: 0.700
+2024-12-05 11:36:08,221 - INFO - Min probability: 0.000
+2024-12-05 11:36:08,221 - INFO - Fold 4 statistics:
+2024-12-05 11:36:08,222 - INFO - Total samples: 99
+2024-12-05 11:36:08,222 - INFO - True positives in fold: 18
+2024-12-05 11:36:08,223 - INFO - Predicted positives: 1
+2024-12-05 11:36:09,993 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:10,002 - INFO - Batch statistics:
+2024-12-05 11:36:10,002 - INFO - Average probability: 0.038
+2024-12-05 11:36:10,003 - INFO - Max probability: 1.000
+2024-12-05 11:36:10,003 - INFO - Min probability: 0.000
+2024-12-05 11:36:10,004 - INFO - Fold 5 statistics:
+2024-12-05 11:36:10,004 - INFO - Total samples: 99
+2024-12-05 11:36:10,004 - INFO - True positives in fold: 16
+2024-12-05 11:36:10,005 - INFO - Predicted positives: 2
+2024-12-05 11:36:10,012 - INFO - Testing combination 5/25: {'debit_adjustment': 0.1, 'probability_threshold': 0.8, 'batch_size': 200}
+2024-12-05 11:36:11,615 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:11,623 - INFO - Batch statistics:
+2024-12-05 11:36:11,624 - INFO - Average probability: 0.021
+2024-12-05 11:36:11,624 - INFO - Max probability: 0.400
+2024-12-05 11:36:11,625 - INFO - Min probability: 0.000
+2024-12-05 11:36:11,625 - INFO - Fold 1 statistics:
+2024-12-05 11:36:11,625 - INFO - Total samples: 100
+2024-12-05 11:36:11,626 - INFO - True positives in fold: 25
+2024-12-05 11:36:11,626 - INFO - Predicted positives: 0
+2024-12-05 11:36:13,487 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:13,495 - INFO - Batch statistics:
+2024-12-05 11:36:13,495 - INFO - Average probability: 0.016
+2024-12-05 11:36:13,496 - INFO - Max probability: 0.500
+2024-12-05 11:36:13,496 - INFO - Min probability: 0.000
+2024-12-05 11:36:13,496 - INFO - Fold 2 statistics:
+2024-12-05 11:36:13,497 - INFO - Total samples: 100
+2024-12-05 11:36:13,497 - INFO - True positives in fold: 22
+2024-12-05 11:36:13,497 - INFO - Predicted positives: 0
+2024-12-05 11:36:15,103 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:15,111 - INFO - Batch statistics:
+2024-12-05 11:36:15,111 - INFO - Average probability: 0.011
+2024-12-05 11:36:15,111 - INFO - Max probability: 0.400
+2024-12-05 11:36:15,112 - INFO - Min probability: 0.000
+2024-12-05 11:36:15,112 - INFO - Fold 3 statistics:
+2024-12-05 11:36:15,113 - INFO - Total samples: 99
+2024-12-05 11:36:15,113 - INFO - True positives in fold: 7
+2024-12-05 11:36:15,113 - INFO - Predicted positives: 0
+2024-12-05 11:36:17,037 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:17,045 - INFO - Batch statistics:
+2024-12-05 11:36:17,045 - INFO - Average probability: 0.019
+2024-12-05 11:36:17,045 - INFO - Max probability: 0.700
+2024-12-05 11:36:17,046 - INFO - Min probability: 0.000
+2024-12-05 11:36:17,046 - INFO - Fold 4 statistics:
+2024-12-05 11:36:17,047 - INFO - Total samples: 99
+2024-12-05 11:36:17,047 - INFO - True positives in fold: 18
+2024-12-05 11:36:17,047 - INFO - Predicted positives: 0
+2024-12-05 11:36:18,646 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:18,655 - INFO - Batch statistics:
+2024-12-05 11:36:18,657 - INFO - Average probability: 0.038
+2024-12-05 11:36:18,657 - INFO - Max probability: 1.000
+2024-12-05 11:36:18,658 - INFO - Min probability: 0.000
+2024-12-05 11:36:18,658 - INFO - Fold 5 statistics:
+2024-12-05 11:36:18,658 - INFO - Total samples: 99
+2024-12-05 11:36:18,659 - INFO - True positives in fold: 16
+2024-12-05 11:36:18,659 - INFO - Predicted positives: 2
+2024-12-05 11:36:18,668 - INFO - Testing combination 6/25: {'debit_adjustment': 0.2, 'probability_threshold': 0.4, 'batch_size': 200}
+2024-12-05 11:36:20,284 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:20,298 - INFO - Batch statistics:
+2024-12-05 11:36:20,299 - INFO - Average probability: 0.036
+2024-12-05 11:36:20,299 - INFO - Max probability: 0.400
+2024-12-05 11:36:20,299 - INFO - Min probability: 0.000
+2024-12-05 11:36:20,300 - INFO - Fold 1 statistics:
+2024-12-05 11:36:20,300 - INFO - Total samples: 100
+2024-12-05 11:36:20,301 - INFO - True positives in fold: 25
+2024-12-05 11:36:20,302 - INFO - Predicted positives: 2
+2024-12-05 11:36:21,925 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:21,938 - INFO - Batch statistics:
+2024-12-05 11:36:21,939 - INFO - Average probability: 0.024
+2024-12-05 11:36:21,939 - INFO - Max probability: 0.600
+2024-12-05 11:36:21,939 - INFO - Min probability: 0.000
+2024-12-05 11:36:21,940 - INFO - Fold 2 statistics:
+2024-12-05 11:36:21,940 - INFO - Total samples: 100
+2024-12-05 11:36:21,941 - INFO - True positives in fold: 22
+2024-12-05 11:36:21,941 - INFO - Predicted positives: 1
+2024-12-05 11:36:23,487 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:23,494 - INFO - Batch statistics:
+2024-12-05 11:36:23,495 - INFO - Average probability: 0.016
+2024-12-05 11:36:23,495 - INFO - Max probability: 0.400
+2024-12-05 11:36:23,495 - INFO - Min probability: 0.000
+2024-12-05 11:36:23,496 - INFO - Fold 3 statistics:
+2024-12-05 11:36:23,496 - INFO - Total samples: 99
+2024-12-05 11:36:23,497 - INFO - True positives in fold: 7
+2024-12-05 11:36:23,497 - INFO - Predicted positives: 2
+2024-12-05 11:36:25,168 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:25,182 - INFO - Batch statistics:
+2024-12-05 11:36:25,182 - INFO - Average probability: 0.030
+2024-12-05 11:36:25,183 - INFO - Max probability: 0.800
+2024-12-05 11:36:25,183 - INFO - Min probability: 0.000
+2024-12-05 11:36:25,184 - INFO - Fold 4 statistics:
+2024-12-05 11:36:25,184 - INFO - Total samples: 99
+2024-12-05 11:36:25,184 - INFO - True positives in fold: 18
+2024-12-05 11:36:25,185 - INFO - Predicted positives: 3
+2024-12-05 11:36:26,721 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:26,728 - INFO - Batch statistics:
+2024-12-05 11:36:26,729 - INFO - Average probability: 0.046
+2024-12-05 11:36:26,729 - INFO - Max probability: 1.000
+2024-12-05 11:36:26,730 - INFO - Min probability: 0.000
+2024-12-05 11:36:26,730 - INFO - Fold 5 statistics:
+2024-12-05 11:36:26,730 - INFO - Total samples: 99
+2024-12-05 11:36:26,731 - INFO - True positives in fold: 16
+2024-12-05 11:36:26,731 - INFO - Predicted positives: 4
+2024-12-05 11:36:26,738 - INFO - Testing combination 7/25: {'debit_adjustment': 0.2, 'probability_threshold': 0.5, 'batch_size': 200}
+2024-12-05 11:36:28,331 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:28,339 - INFO - Batch statistics:
+2024-12-05 11:36:28,340 - INFO - Average probability: 0.036
+2024-12-05 11:36:28,340 - INFO - Max probability: 0.400
+2024-12-05 11:36:28,340 - INFO - Min probability: 0.000
+2024-12-05 11:36:28,341 - INFO - Fold 1 statistics:
+2024-12-05 11:36:28,341 - INFO - Total samples: 100
+2024-12-05 11:36:28,342 - INFO - True positives in fold: 25
+2024-12-05 11:36:28,342 - INFO - Predicted positives: 0
+2024-12-05 11:36:29,869 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:29,877 - INFO - Batch statistics:
+2024-12-05 11:36:29,877 - INFO - Average probability: 0.020
+2024-12-05 11:36:29,878 - INFO - Max probability: 0.200
+2024-12-05 11:36:29,878 - INFO - Min probability: 0.000
+2024-12-05 11:36:29,879 - INFO - Fold 2 statistics:
+2024-12-05 11:36:29,879 - INFO - Total samples: 100
+2024-12-05 11:36:29,879 - INFO - True positives in fold: 22
+2024-12-05 11:36:29,880 - INFO - Predicted positives: 0
+2024-12-05 11:36:31,535 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:31,547 - INFO - Batch statistics:
+2024-12-05 11:36:31,547 - INFO - Average probability: 0.016
+2024-12-05 11:36:31,548 - INFO - Max probability: 0.400
+2024-12-05 11:36:31,548 - INFO - Min probability: 0.000
+2024-12-05 11:36:31,549 - INFO - Fold 3 statistics:
+2024-12-05 11:36:31,549 - INFO - Total samples: 99
+2024-12-05 11:36:31,549 - INFO - True positives in fold: 7
+2024-12-05 11:36:31,549 - INFO - Predicted positives: 0
+2024-12-05 11:36:33,463 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:33,472 - INFO - Batch statistics:
+2024-12-05 11:36:33,472 - INFO - Average probability: 0.034
+2024-12-05 11:36:33,473 - INFO - Max probability: 0.800
+2024-12-05 11:36:33,473 - INFO - Min probability: 0.000
+2024-12-05 11:36:33,474 - INFO - Fold 4 statistics:
+2024-12-05 11:36:33,474 - INFO - Total samples: 99
+2024-12-05 11:36:33,474 - INFO - True positives in fold: 18
+2024-12-05 11:36:33,475 - INFO - Predicted positives: 2
+2024-12-05 11:36:35,178 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:35,186 - INFO - Batch statistics:
+2024-12-05 11:36:35,187 - INFO - Average probability: 0.046
+2024-12-05 11:36:35,187 - INFO - Max probability: 1.000
+2024-12-05 11:36:35,187 - INFO - Min probability: 0.000
+2024-12-05 11:36:35,188 - INFO - Fold 5 statistics:
+2024-12-05 11:36:35,188 - INFO - Total samples: 99
+2024-12-05 11:36:35,188 - INFO - True positives in fold: 16
+2024-12-05 11:36:35,189 - INFO - Predicted positives: 4
+2024-12-05 11:36:35,195 - INFO - Testing combination 8/25: {'debit_adjustment': 0.2, 'probability_threshold': 0.6, 'batch_size': 200}
+2024-12-05 11:36:37,129 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:37,137 - INFO - Batch statistics:
+2024-12-05 11:36:37,138 - INFO - Average probability: 0.036
+2024-12-05 11:36:37,138 - INFO - Max probability: 0.400
+2024-12-05 11:36:37,138 - INFO - Min probability: 0.000
+2024-12-05 11:36:37,139 - INFO - Fold 1 statistics:
+2024-12-05 11:36:37,139 - INFO - Total samples: 100
+2024-12-05 11:36:37,140 - INFO - True positives in fold: 25
+2024-12-05 11:36:37,140 - INFO - Predicted positives: 0
+2024-12-05 11:36:38,684 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:38,693 - INFO - Batch statistics:
+2024-12-05 11:36:38,693 - INFO - Average probability: 0.020
+2024-12-05 11:36:38,693 - INFO - Max probability: 0.200
+2024-12-05 11:36:38,694 - INFO - Min probability: 0.000
+2024-12-05 11:36:38,694 - INFO - Fold 2 statistics:
+2024-12-05 11:36:38,694 - INFO - Total samples: 100
+2024-12-05 11:36:38,695 - INFO - True positives in fold: 22
+2024-12-05 11:36:38,695 - INFO - Predicted positives: 0
+2024-12-05 11:36:40,236 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:40,243 - INFO - Batch statistics:
+2024-12-05 11:36:40,244 - INFO - Average probability: 0.016
+2024-12-05 11:36:40,244 - INFO - Max probability: 0.400
+2024-12-05 11:36:40,244 - INFO - Min probability: 0.000
+2024-12-05 11:36:40,245 - INFO - Fold 3 statistics:
+2024-12-05 11:36:40,245 - INFO - Total samples: 99
+2024-12-05 11:36:40,245 - INFO - True positives in fold: 7
+2024-12-05 11:36:40,246 - INFO - Predicted positives: 0
+2024-12-05 11:36:42,824 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:42,832 - INFO - Batch statistics:
+2024-12-05 11:36:42,832 - INFO - Average probability: 0.030
+2024-12-05 11:36:42,833 - INFO - Max probability: 0.800
+2024-12-05 11:36:42,833 - INFO - Min probability: 0.000
+2024-12-05 11:36:42,833 - INFO - Fold 4 statistics:
+2024-12-05 11:36:42,833 - INFO - Total samples: 99
+2024-12-05 11:36:42,833 - INFO - True positives in fold: 18
+2024-12-05 11:36:42,834 - INFO - Predicted positives: 1
+2024-12-05 11:36:44,420 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:44,428 - INFO - Batch statistics:
+2024-12-05 11:36:44,429 - INFO - Average probability: 0.030
+2024-12-05 11:36:44,429 - INFO - Max probability: 0.600
+2024-12-05 11:36:44,429 - INFO - Min probability: 0.000
+2024-12-05 11:36:44,430 - INFO - Fold 5 statistics:
+2024-12-05 11:36:44,430 - INFO - Total samples: 99
+2024-12-05 11:36:44,430 - INFO - True positives in fold: 16
+2024-12-05 11:36:44,431 - INFO - Predicted positives: 2
+2024-12-05 11:36:44,439 - INFO - Testing combination 9/25: {'debit_adjustment': 0.2, 'probability_threshold': 0.7, 'batch_size': 200}
+2024-12-05 11:36:45,932 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:45,939 - INFO - Batch statistics:
+2024-12-05 11:36:45,940 - INFO - Average probability: 0.036
+2024-12-05 11:36:45,940 - INFO - Max probability: 0.400
+2024-12-05 11:36:45,941 - INFO - Min probability: 0.000
+2024-12-05 11:36:45,941 - INFO - Fold 1 statistics:
+2024-12-05 11:36:45,941 - INFO - Total samples: 100
+2024-12-05 11:36:45,942 - INFO - True positives in fold: 25
+2024-12-05 11:36:45,942 - INFO - Predicted positives: 0
+2024-12-05 11:36:47,674 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:47,685 - INFO - Batch statistics:
+2024-12-05 11:36:47,686 - INFO - Average probability: 0.020
+2024-12-05 11:36:47,686 - INFO - Max probability: 0.200
+2024-12-05 11:36:47,686 - INFO - Min probability: 0.000
+2024-12-05 11:36:47,687 - INFO - Fold 2 statistics:
+2024-12-05 11:36:47,687 - INFO - Total samples: 100
+2024-12-05 11:36:47,688 - INFO - True positives in fold: 22
+2024-12-05 11:36:47,688 - INFO - Predicted positives: 0
+2024-12-05 11:36:49,458 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:49,466 - INFO - Batch statistics:
+2024-12-05 11:36:49,466 - INFO - Average probability: 0.016
+2024-12-05 11:36:49,467 - INFO - Max probability: 0.400
+2024-12-05 11:36:49,467 - INFO - Min probability: 0.000
+2024-12-05 11:36:49,468 - INFO - Fold 3 statistics:
+2024-12-05 11:36:49,468 - INFO - Total samples: 99
+2024-12-05 11:36:49,468 - INFO - True positives in fold: 7
+2024-12-05 11:36:49,468 - INFO - Predicted positives: 0
+2024-12-05 11:36:51,101 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:51,108 - INFO - Batch statistics:
+2024-12-05 11:36:51,109 - INFO - Average probability: 0.030
+2024-12-05 11:36:51,109 - INFO - Max probability: 0.800
+2024-12-05 11:36:51,110 - INFO - Min probability: 0.000
+2024-12-05 11:36:51,110 - INFO - Fold 4 statistics:
+2024-12-05 11:36:51,110 - INFO - Total samples: 99
+2024-12-05 11:36:51,111 - INFO - True positives in fold: 18
+2024-12-05 11:36:51,111 - INFO - Predicted positives: 1
+2024-12-05 11:36:52,643 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:52,651 - INFO - Batch statistics:
+2024-12-05 11:36:52,651 - INFO - Average probability: 0.046
+2024-12-05 11:36:52,652 - INFO - Max probability: 1.000
+2024-12-05 11:36:52,652 - INFO - Min probability: 0.000
+2024-12-05 11:36:52,652 - INFO - Fold 5 statistics:
+2024-12-05 11:36:52,653 - INFO - Total samples: 99
+2024-12-05 11:36:52,653 - INFO - True positives in fold: 16
+2024-12-05 11:36:52,653 - INFO - Predicted positives: 2
+2024-12-05 11:36:52,662 - INFO - Testing combination 10/25: {'debit_adjustment': 0.2, 'probability_threshold': 0.8, 'batch_size': 200}
+2024-12-05 11:36:54,265 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:54,274 - INFO - Batch statistics:
+2024-12-05 11:36:54,275 - INFO - Average probability: 0.036
+2024-12-05 11:36:54,275 - INFO - Max probability: 0.400
+2024-12-05 11:36:54,275 - INFO - Min probability: 0.000
+2024-12-05 11:36:54,276 - INFO - Fold 1 statistics:
+2024-12-05 11:36:54,276 - INFO - Total samples: 100
+2024-12-05 11:36:54,277 - INFO - True positives in fold: 25
+2024-12-05 11:36:54,277 - INFO - Predicted positives: 0
+2024-12-05 11:36:55,909 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:55,917 - INFO - Batch statistics:
+2024-12-05 11:36:55,918 - INFO - Average probability: 0.020
+2024-12-05 11:36:55,918 - INFO - Max probability: 0.200
+2024-12-05 11:36:55,918 - INFO - Min probability: 0.000
+2024-12-05 11:36:55,919 - INFO - Fold 2 statistics:
+2024-12-05 11:36:55,919 - INFO - Total samples: 100
+2024-12-05 11:36:55,919 - INFO - True positives in fold: 22
+2024-12-05 11:36:55,920 - INFO - Predicted positives: 0
+2024-12-05 11:36:57,970 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:57,978 - INFO - Batch statistics:
+2024-12-05 11:36:57,979 - INFO - Average probability: 0.024
+2024-12-05 11:36:57,979 - INFO - Max probability: 1.000
+2024-12-05 11:36:57,979 - INFO - Min probability: 0.000
+2024-12-05 11:36:57,980 - INFO - Fold 3 statistics:
+2024-12-05 11:36:57,980 - INFO - Total samples: 99
+2024-12-05 11:36:57,981 - INFO - True positives in fold: 7
+2024-12-05 11:36:57,981 - INFO - Predicted positives: 1
+2024-12-05 11:36:59,710 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:36:59,720 - INFO - Batch statistics:
+2024-12-05 11:36:59,721 - INFO - Average probability: 0.028
+2024-12-05 11:36:59,721 - INFO - Max probability: 0.800
+2024-12-05 11:36:59,721 - INFO - Min probability: 0.000
+2024-12-05 11:36:59,722 - INFO - Fold 4 statistics:
+2024-12-05 11:36:59,722 - INFO - Total samples: 99
+2024-12-05 11:36:59,722 - INFO - True positives in fold: 18
+2024-12-05 11:36:59,723 - INFO - Predicted positives: 1
+2024-12-05 11:37:01,570 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:01,578 - INFO - Batch statistics:
+2024-12-05 11:37:01,579 - INFO - Average probability: 0.046
+2024-12-05 11:37:01,579 - INFO - Max probability: 1.000
+2024-12-05 11:37:01,579 - INFO - Min probability: 0.000
+2024-12-05 11:37:01,580 - INFO - Fold 5 statistics:
+2024-12-05 11:37:01,580 - INFO - Total samples: 99
+2024-12-05 11:37:01,580 - INFO - True positives in fold: 16
+2024-12-05 11:37:01,581 - INFO - Predicted positives: 2
+2024-12-05 11:37:01,588 - INFO - Testing combination 11/25: {'debit_adjustment': 0.3, 'probability_threshold': 0.4, 'batch_size': 200}
+2024-12-05 11:37:03,241 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:03,253 - INFO - Batch statistics:
+2024-12-05 11:37:03,253 - INFO - Average probability: 0.051
+2024-12-05 11:37:03,254 - INFO - Max probability: 0.500
+2024-12-05 11:37:03,254 - INFO - Min probability: 0.000
+2024-12-05 11:37:03,255 - INFO - Fold 1 statistics:
+2024-12-05 11:37:03,255 - INFO - Total samples: 100
+2024-12-05 11:37:03,256 - INFO - True positives in fold: 25
+2024-12-05 11:37:03,256 - INFO - Predicted positives: 2
+2024-12-05 11:37:05,095 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:05,104 - INFO - Batch statistics:
+2024-12-05 11:37:05,105 - INFO - Average probability: 0.028
+2024-12-05 11:37:05,105 - INFO - Max probability: 0.300
+2024-12-05 11:37:05,106 - INFO - Min probability: 0.000
+2024-12-05 11:37:05,106 - INFO - Fold 2 statistics:
+2024-12-05 11:37:05,106 - INFO - Total samples: 100
+2024-12-05 11:37:05,107 - INFO - True positives in fold: 22
+2024-12-05 11:37:05,107 - INFO - Predicted positives: 0
+2024-12-05 11:37:06,728 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:06,736 - INFO - Batch statistics:
+2024-12-05 11:37:06,737 - INFO - Average probability: 0.021
+2024-12-05 11:37:06,737 - INFO - Max probability: 0.500
+2024-12-05 11:37:06,738 - INFO - Min probability: 0.000
+2024-12-05 11:37:06,738 - INFO - Fold 3 statistics:
+2024-12-05 11:37:06,738 - INFO - Total samples: 99
+2024-12-05 11:37:06,739 - INFO - True positives in fold: 7
+2024-12-05 11:37:06,739 - INFO - Predicted positives: 2
+2024-12-05 11:37:08,587 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:08,602 - INFO - Batch statistics:
+2024-12-05 11:37:08,602 - INFO - Average probability: 0.037
+2024-12-05 11:37:08,602 - INFO - Max probability: 0.900
+2024-12-05 11:37:08,603 - INFO - Min probability: 0.000
+2024-12-05 11:37:08,603 - INFO - Fold 4 statistics:
+2024-12-05 11:37:08,604 - INFO - Total samples: 99
+2024-12-05 11:37:08,604 - INFO - True positives in fold: 18
+2024-12-05 11:37:08,604 - INFO - Predicted positives: 2
+2024-12-05 11:37:10,329 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:10,339 - INFO - Batch statistics:
+2024-12-05 11:37:10,340 - INFO - Average probability: 0.055
+2024-12-05 11:37:10,340 - INFO - Max probability: 1.000
+2024-12-05 11:37:10,340 - INFO - Min probability: 0.000
+2024-12-05 11:37:10,341 - INFO - Fold 5 statistics:
+2024-12-05 11:37:10,341 - INFO - Total samples: 99
+2024-12-05 11:37:10,342 - INFO - True positives in fold: 16
+2024-12-05 11:37:10,342 - INFO - Predicted positives: 4
+2024-12-05 11:37:10,351 - INFO - Testing combination 12/25: {'debit_adjustment': 0.3, 'probability_threshold': 0.5, 'batch_size': 200}
+2024-12-05 11:37:13,129 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:13,138 - INFO - Batch statistics:
+2024-12-05 11:37:13,138 - INFO - Average probability: 0.051
+2024-12-05 11:37:13,138 - INFO - Max probability: 0.500
+2024-12-05 11:37:13,139 - INFO - Min probability: 0.000
+2024-12-05 11:37:13,139 - INFO - Fold 1 statistics:
+2024-12-05 11:37:13,140 - INFO - Total samples: 100
+2024-12-05 11:37:13,140 - INFO - True positives in fold: 25
+2024-12-05 11:37:13,140 - INFO - Predicted positives: 1
+2024-12-05 11:37:17,359 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:17,368 - INFO - Batch statistics:
+2024-12-05 11:37:17,369 - INFO - Average probability: 0.028
+2024-12-05 11:37:17,369 - INFO - Max probability: 0.300
+2024-12-05 11:37:17,370 - INFO - Min probability: 0.000
+2024-12-05 11:37:17,370 - INFO - Fold 2 statistics:
+2024-12-05 11:37:17,371 - INFO - Total samples: 100
+2024-12-05 11:37:17,371 - INFO - True positives in fold: 22
+2024-12-05 11:37:17,371 - INFO - Predicted positives: 0
+2024-12-05 11:37:22,782 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:22,792 - INFO - Batch statistics:
+2024-12-05 11:37:22,792 - INFO - Average probability: 0.021
+2024-12-05 11:37:22,792 - INFO - Max probability: 0.500
+2024-12-05 11:37:22,793 - INFO - Min probability: 0.000
+2024-12-05 11:37:22,793 - INFO - Fold 3 statistics:
+2024-12-05 11:37:22,794 - INFO - Total samples: 99
+2024-12-05 11:37:22,794 - INFO - True positives in fold: 7
+2024-12-05 11:37:22,794 - INFO - Predicted positives: 1
+2024-12-05 11:37:27,158 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:27,167 - INFO - Batch statistics:
+2024-12-05 11:37:27,168 - INFO - Average probability: 0.038
+2024-12-05 11:37:27,168 - INFO - Max probability: 1.000
+2024-12-05 11:37:27,169 - INFO - Min probability: 0.000
+2024-12-05 11:37:27,169 - INFO - Fold 4 statistics:
+2024-12-05 11:37:27,169 - INFO - Total samples: 99
+2024-12-05 11:37:27,170 - INFO - True positives in fold: 18
+2024-12-05 11:37:27,170 - INFO - Predicted positives: 1
+2024-12-05 11:37:31,365 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:31,373 - INFO - Batch statistics:
+2024-12-05 11:37:31,373 - INFO - Average probability: 0.040
+2024-12-05 11:37:31,373 - INFO - Max probability: 0.700
+2024-12-05 11:37:31,374 - INFO - Min probability: 0.000
+2024-12-05 11:37:31,374 - INFO - Fold 5 statistics:
+2024-12-05 11:37:31,374 - INFO - Total samples: 99
+2024-12-05 11:37:31,375 - INFO - True positives in fold: 16
+2024-12-05 11:37:31,375 - INFO - Predicted positives: 2
+2024-12-05 11:37:31,381 - INFO - Testing combination 13/25: {'debit_adjustment': 0.3, 'probability_threshold': 0.6, 'batch_size': 200}
+2024-12-05 11:37:35,498 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:35,507 - INFO - Batch statistics:
+2024-12-05 11:37:35,508 - INFO - Average probability: 0.051
+2024-12-05 11:37:35,508 - INFO - Max probability: 0.500
+2024-12-05 11:37:35,509 - INFO - Min probability: 0.000
+2024-12-05 11:37:35,509 - INFO - Fold 1 statistics:
+2024-12-05 11:37:35,509 - INFO - Total samples: 100
+2024-12-05 11:37:35,510 - INFO - True positives in fold: 25
+2024-12-05 11:37:35,510 - INFO - Predicted positives: 0
+2024-12-05 11:37:37,338 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:37,346 - INFO - Batch statistics:
+2024-12-05 11:37:37,347 - INFO - Average probability: 0.032
+2024-12-05 11:37:37,347 - INFO - Max probability: 0.700
+2024-12-05 11:37:37,347 - INFO - Min probability: 0.000
+2024-12-05 11:37:37,348 - INFO - Fold 2 statistics:
+2024-12-05 11:37:37,348 - INFO - Total samples: 100
+2024-12-05 11:37:37,349 - INFO - True positives in fold: 22
+2024-12-05 11:37:37,349 - INFO - Predicted positives: 1
+2024-12-05 11:37:39,196 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:39,204 - INFO - Batch statistics:
+2024-12-05 11:37:39,204 - INFO - Average probability: 0.021
+2024-12-05 11:37:39,204 - INFO - Max probability: 0.500
+2024-12-05 11:37:39,205 - INFO - Min probability: 0.000
+2024-12-05 11:37:39,205 - INFO - Fold 3 statistics:
+2024-12-05 11:37:39,205 - INFO - Total samples: 99
+2024-12-05 11:37:39,206 - INFO - True positives in fold: 7
+2024-12-05 11:37:39,206 - INFO - Predicted positives: 0
+2024-12-05 11:37:43,547 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:43,557 - INFO - Batch statistics:
+2024-12-05 11:37:43,557 - INFO - Average probability: 0.038
+2024-12-05 11:37:43,558 - INFO - Max probability: 1.000
+2024-12-05 11:37:43,558 - INFO - Min probability: 0.000
+2024-12-05 11:37:43,559 - INFO - Fold 4 statistics:
+2024-12-05 11:37:43,559 - INFO - Total samples: 99
+2024-12-05 11:37:43,559 - INFO - True positives in fold: 18
+2024-12-05 11:37:43,560 - INFO - Predicted positives: 1
+2024-12-05 11:37:47,654 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:47,663 - INFO - Batch statistics:
+2024-12-05 11:37:47,663 - INFO - Average probability: 0.055
+2024-12-05 11:37:47,664 - INFO - Max probability: 1.000
+2024-12-05 11:37:47,664 - INFO - Min probability: 0.000
+2024-12-05 11:37:47,665 - INFO - Fold 5 statistics:
+2024-12-05 11:37:47,665 - INFO - Total samples: 99
+2024-12-05 11:37:47,665 - INFO - True positives in fold: 16
+2024-12-05 11:37:47,665 - INFO - Predicted positives: 4
+2024-12-05 11:37:47,673 - INFO - Testing combination 14/25: {'debit_adjustment': 0.3, 'probability_threshold': 0.7, 'batch_size': 200}
+2024-12-05 11:37:49,230 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:49,240 - INFO - Batch statistics:
+2024-12-05 11:37:49,241 - INFO - Average probability: 0.051
+2024-12-05 11:37:49,241 - INFO - Max probability: 0.500
+2024-12-05 11:37:49,241 - INFO - Min probability: 0.000
+2024-12-05 11:37:49,242 - INFO - Fold 1 statistics:
+2024-12-05 11:37:49,242 - INFO - Total samples: 100
+2024-12-05 11:37:49,242 - INFO - True positives in fold: 25
+2024-12-05 11:37:49,243 - INFO - Predicted positives: 0
+2024-12-05 11:37:50,936 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:50,944 - INFO - Batch statistics:
+2024-12-05 11:37:50,945 - INFO - Average probability: 0.032
+2024-12-05 11:37:50,945 - INFO - Max probability: 0.700
+2024-12-05 11:37:50,945 - INFO - Min probability: 0.000
+2024-12-05 11:37:50,946 - INFO - Fold 2 statistics:
+2024-12-05 11:37:50,946 - INFO - Total samples: 100
+2024-12-05 11:37:50,946 - INFO - True positives in fold: 22
+2024-12-05 11:37:50,947 - INFO - Predicted positives: 1
+2024-12-05 11:37:52,742 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:52,750 - INFO - Batch statistics:
+2024-12-05 11:37:52,751 - INFO - Average probability: 0.021
+2024-12-05 11:37:52,751 - INFO - Max probability: 0.500
+2024-12-05 11:37:52,751 - INFO - Min probability: 0.000
+2024-12-05 11:37:52,752 - INFO - Fold 3 statistics:
+2024-12-05 11:37:52,752 - INFO - Total samples: 99
+2024-12-05 11:37:52,752 - INFO - True positives in fold: 7
+2024-12-05 11:37:52,753 - INFO - Predicted positives: 0
+2024-12-05 11:37:54,545 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:54,553 - INFO - Batch statistics:
+2024-12-05 11:37:54,554 - INFO - Average probability: 0.038
+2024-12-05 11:37:54,554 - INFO - Max probability: 1.000
+2024-12-05 11:37:54,554 - INFO - Min probability: 0.000
+2024-12-05 11:37:54,555 - INFO - Fold 4 statistics:
+2024-12-05 11:37:54,555 - INFO - Total samples: 99
+2024-12-05 11:37:54,555 - INFO - True positives in fold: 18
+2024-12-05 11:37:54,556 - INFO - Predicted positives: 1
+2024-12-05 11:37:56,184 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:56,192 - INFO - Batch statistics:
+2024-12-05 11:37:56,193 - INFO - Average probability: 0.055
+2024-12-05 11:37:56,193 - INFO - Max probability: 1.000
+2024-12-05 11:37:56,193 - INFO - Min probability: 0.000
+2024-12-05 11:37:56,194 - INFO - Fold 5 statistics:
+2024-12-05 11:37:56,194 - INFO - Total samples: 99
+2024-12-05 11:37:56,194 - INFO - True positives in fold: 16
+2024-12-05 11:37:56,195 - INFO - Predicted positives: 3
+2024-12-05 11:37:56,200 - INFO - Testing combination 15/25: {'debit_adjustment': 0.3, 'probability_threshold': 0.8, 'batch_size': 200}
+2024-12-05 11:37:57,962 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:57,971 - INFO - Batch statistics:
+2024-12-05 11:37:57,971 - INFO - Average probability: 0.051
+2024-12-05 11:37:57,971 - INFO - Max probability: 0.500
+2024-12-05 11:37:57,972 - INFO - Min probability: 0.000
+2024-12-05 11:37:57,972 - INFO - Fold 1 statistics:
+2024-12-05 11:37:57,972 - INFO - Total samples: 100
+2024-12-05 11:37:57,973 - INFO - True positives in fold: 25
+2024-12-05 11:37:57,973 - INFO - Predicted positives: 0
+2024-12-05 11:37:59,517 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:37:59,525 - INFO - Batch statistics:
+2024-12-05 11:37:59,526 - INFO - Average probability: 0.032
+2024-12-05 11:37:59,526 - INFO - Max probability: 0.700
+2024-12-05 11:37:59,526 - INFO - Min probability: 0.000
+2024-12-05 11:37:59,527 - INFO - Fold 2 statistics:
+2024-12-05 11:37:59,527 - INFO - Total samples: 100
+2024-12-05 11:37:59,527 - INFO - True positives in fold: 22
+2024-12-05 11:37:59,528 - INFO - Predicted positives: 0
+2024-12-05 11:38:01,208 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:01,215 - INFO - Batch statistics:
+2024-12-05 11:38:01,216 - INFO - Average probability: 0.028
+2024-12-05 11:38:01,216 - INFO - Max probability: 1.000
+2024-12-05 11:38:01,217 - INFO - Min probability: 0.000
+2024-12-05 11:38:01,217 - INFO - Fold 3 statistics:
+2024-12-05 11:38:01,217 - INFO - Total samples: 99
+2024-12-05 11:38:01,217 - INFO - True positives in fold: 7
+2024-12-05 11:38:01,218 - INFO - Predicted positives: 1
+2024-12-05 11:38:02,714 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:02,724 - INFO - Batch statistics:
+2024-12-05 11:38:02,725 - INFO - Average probability: 0.037
+2024-12-05 11:38:02,725 - INFO - Max probability: 0.900
+2024-12-05 11:38:02,725 - INFO - Min probability: 0.000
+2024-12-05 11:38:02,726 - INFO - Fold 4 statistics:
+2024-12-05 11:38:02,726 - INFO - Total samples: 99
+2024-12-05 11:38:02,726 - INFO - True positives in fold: 18
+2024-12-05 11:38:02,727 - INFO - Predicted positives: 1
+2024-12-05 11:38:04,906 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:04,915 - INFO - Batch statistics:
+2024-12-05 11:38:04,915 - INFO - Average probability: 0.055
+2024-12-05 11:38:04,916 - INFO - Max probability: 1.000
+2024-12-05 11:38:04,916 - INFO - Min probability: 0.000
+2024-12-05 11:38:04,916 - INFO - Fold 5 statistics:
+2024-12-05 11:38:04,916 - INFO - Total samples: 99
+2024-12-05 11:38:04,917 - INFO - True positives in fold: 16
+2024-12-05 11:38:04,917 - INFO - Predicted positives: 2
+2024-12-05 11:38:04,928 - INFO - Testing combination 16/25: {'debit_adjustment': 0.4, 'probability_threshold': 0.4, 'batch_size': 200}
+2024-12-05 11:38:06,999 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:07,007 - INFO - Batch statistics:
+2024-12-05 11:38:07,008 - INFO - Average probability: 0.066
+2024-12-05 11:38:07,008 - INFO - Max probability: 0.600
+2024-12-05 11:38:07,009 - INFO - Min probability: 0.000
+2024-12-05 11:38:07,009 - INFO - Fold 1 statistics:
+2024-12-05 11:38:07,009 - INFO - Total samples: 100
+2024-12-05 11:38:07,010 - INFO - True positives in fold: 25
+2024-12-05 11:38:07,010 - INFO - Predicted positives: 16
+2024-12-05 11:38:08,929 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:08,965 - INFO - Batch statistics:
+2024-12-05 11:38:08,966 - INFO - Average probability: 0.036
+2024-12-05 11:38:08,966 - INFO - Max probability: 0.400
+2024-12-05 11:38:08,967 - INFO - Min probability: 0.000
+2024-12-05 11:38:08,967 - INFO - Fold 2 statistics:
+2024-12-05 11:38:08,968 - INFO - Total samples: 100
+2024-12-05 11:38:08,968 - INFO - True positives in fold: 22
+2024-12-05 11:38:08,968 - INFO - Predicted positives: 8
+2024-12-05 11:38:10,590 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:10,600 - INFO - Batch statistics:
+2024-12-05 11:38:10,601 - INFO - Average probability: 0.032
+2024-12-05 11:38:10,601 - INFO - Max probability: 1.000
+2024-12-05 11:38:10,601 - INFO - Min probability: 0.000
+2024-12-05 11:38:10,602 - INFO - Fold 3 statistics:
+2024-12-05 11:38:10,602 - INFO - Total samples: 99
+2024-12-05 11:38:10,603 - INFO - True positives in fold: 7
+2024-12-05 11:38:10,603 - INFO - Predicted positives: 6
+2024-12-05 11:38:12,785 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:12,794 - INFO - Batch statistics:
+2024-12-05 11:38:12,795 - INFO - Average probability: 0.046
+2024-12-05 11:38:12,795 - INFO - Max probability: 1.000
+2024-12-05 11:38:12,796 - INFO - Min probability: 0.000
+2024-12-05 11:38:12,796 - INFO - Fold 4 statistics:
+2024-12-05 11:38:12,796 - INFO - Total samples: 99
+2024-12-05 11:38:12,797 - INFO - True positives in fold: 18
+2024-12-05 11:38:12,797 - INFO - Predicted positives: 10
+2024-12-05 11:38:14,615 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:14,623 - INFO - Batch statistics:
+2024-12-05 11:38:14,623 - INFO - Average probability: 0.063
+2024-12-05 11:38:14,624 - INFO - Max probability: 1.000
+2024-12-05 11:38:14,624 - INFO - Min probability: 0.000
+2024-12-05 11:38:14,624 - INFO - Fold 5 statistics:
+2024-12-05 11:38:14,625 - INFO - Total samples: 99
+2024-12-05 11:38:14,625 - INFO - True positives in fold: 16
+2024-12-05 11:38:14,625 - INFO - Predicted positives: 11
+2024-12-05 11:38:14,634 - INFO - Testing combination 17/25: {'debit_adjustment': 0.4, 'probability_threshold': 0.5, 'batch_size': 200}
+2024-12-05 11:38:16,460 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:16,473 - INFO - Batch statistics:
+2024-12-05 11:38:16,475 - INFO - Average probability: 0.066
+2024-12-05 11:38:16,475 - INFO - Max probability: 0.600
+2024-12-05 11:38:16,475 - INFO - Min probability: 0.000
+2024-12-05 11:38:16,476 - INFO - Fold 1 statistics:
+2024-12-05 11:38:16,476 - INFO - Total samples: 100
+2024-12-05 11:38:16,477 - INFO - True positives in fold: 25
+2024-12-05 11:38:16,477 - INFO - Predicted positives: 1
+2024-12-05 11:38:18,207 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:18,220 - INFO - Batch statistics:
+2024-12-05 11:38:18,221 - INFO - Average probability: 0.036
+2024-12-05 11:38:18,221 - INFO - Max probability: 0.400
+2024-12-05 11:38:18,222 - INFO - Min probability: 0.000
+2024-12-05 11:38:18,222 - INFO - Fold 2 statistics:
+2024-12-05 11:38:18,223 - INFO - Total samples: 100
+2024-12-05 11:38:18,223 - INFO - True positives in fold: 22
+2024-12-05 11:38:18,223 - INFO - Predicted positives: 0
+2024-12-05 11:38:19,785 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:19,797 - INFO - Batch statistics:
+2024-12-05 11:38:19,797 - INFO - Average probability: 0.026
+2024-12-05 11:38:19,798 - INFO - Max probability: 0.600
+2024-12-05 11:38:19,798 - INFO - Min probability: 0.000
+2024-12-05 11:38:19,799 - INFO - Fold 3 statistics:
+2024-12-05 11:38:19,799 - INFO - Total samples: 99
+2024-12-05 11:38:19,799 - INFO - True positives in fold: 7
+2024-12-05 11:38:19,800 - INFO - Predicted positives: 1
+2024-12-05 11:38:21,395 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:21,404 - INFO - Batch statistics:
+2024-12-05 11:38:21,404 - INFO - Average probability: 0.053
+2024-12-05 11:38:21,404 - INFO - Max probability: 1.000
+2024-12-05 11:38:21,405 - INFO - Min probability: 0.000
+2024-12-05 11:38:21,405 - INFO - Fold 4 statistics:
+2024-12-05 11:38:21,405 - INFO - Total samples: 99
+2024-12-05 11:38:21,406 - INFO - True positives in fold: 18
+2024-12-05 11:38:21,406 - INFO - Predicted positives: 2
+2024-12-05 11:38:23,000 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:23,010 - INFO - Batch statistics:
+2024-12-05 11:38:23,010 - INFO - Average probability: 0.051
+2024-12-05 11:38:23,011 - INFO - Max probability: 0.800
+2024-12-05 11:38:23,011 - INFO - Min probability: 0.000
+2024-12-05 11:38:23,012 - INFO - Fold 5 statistics:
+2024-12-05 11:38:23,012 - INFO - Total samples: 99
+2024-12-05 11:38:23,012 - INFO - True positives in fold: 16
+2024-12-05 11:38:23,012 - INFO - Predicted positives: 2
+2024-12-05 11:38:23,018 - INFO - Testing combination 18/25: {'debit_adjustment': 0.4, 'probability_threshold': 0.6, 'batch_size': 200}
+2024-12-05 11:38:24,798 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:24,806 - INFO - Batch statistics:
+2024-12-05 11:38:24,807 - INFO - Average probability: 0.066
+2024-12-05 11:38:24,807 - INFO - Max probability: 0.600
+2024-12-05 11:38:24,807 - INFO - Min probability: 0.000
+2024-12-05 11:38:24,808 - INFO - Fold 1 statistics:
+2024-12-05 11:38:24,808 - INFO - Total samples: 100
+2024-12-05 11:38:24,808 - INFO - True positives in fold: 25
+2024-12-05 11:38:24,809 - INFO - Predicted positives: 1
+2024-12-05 11:38:26,691 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:26,699 - INFO - Batch statistics:
+2024-12-05 11:38:26,699 - INFO - Average probability: 0.040
+2024-12-05 11:38:26,700 - INFO - Max probability: 0.800
+2024-12-05 11:38:26,700 - INFO - Min probability: 0.000
+2024-12-05 11:38:26,701 - INFO - Fold 2 statistics:
+2024-12-05 11:38:26,701 - INFO - Total samples: 100
+2024-12-05 11:38:26,701 - INFO - True positives in fold: 22
+2024-12-05 11:38:26,701 - INFO - Predicted positives: 1
+2024-12-05 11:38:28,266 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:28,275 - INFO - Batch statistics:
+2024-12-05 11:38:28,275 - INFO - Average probability: 0.026
+2024-12-05 11:38:28,276 - INFO - Max probability: 0.600
+2024-12-05 11:38:28,276 - INFO - Min probability: 0.000
+2024-12-05 11:38:28,276 - INFO - Fold 3 statistics:
+2024-12-05 11:38:28,277 - INFO - Total samples: 99
+2024-12-05 11:38:28,277 - INFO - True positives in fold: 7
+2024-12-05 11:38:28,277 - INFO - Predicted positives: 1
+2024-12-05 11:38:29,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:29,763 - INFO - Batch statistics:
+2024-12-05 11:38:29,763 - INFO - Average probability: 0.046
+2024-12-05 11:38:29,764 - INFO - Max probability: 1.000
+2024-12-05 11:38:29,764 - INFO - Min probability: 0.000
+2024-12-05 11:38:29,765 - INFO - Fold 4 statistics:
+2024-12-05 11:38:29,765 - INFO - Total samples: 99
+2024-12-05 11:38:29,765 - INFO - True positives in fold: 18
+2024-12-05 11:38:29,765 - INFO - Predicted positives: 1
+2024-12-05 11:38:31,528 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:31,536 - INFO - Batch statistics:
+2024-12-05 11:38:31,537 - INFO - Average probability: 0.063
+2024-12-05 11:38:31,537 - INFO - Max probability: 1.000
+2024-12-05 11:38:31,537 - INFO - Min probability: 0.000
+2024-12-05 11:38:31,538 - INFO - Fold 5 statistics:
+2024-12-05 11:38:31,538 - INFO - Total samples: 99
+2024-12-05 11:38:31,538 - INFO - True positives in fold: 16
+2024-12-05 11:38:31,539 - INFO - Predicted positives: 4
+2024-12-05 11:38:31,544 - INFO - Testing combination 19/25: {'debit_adjustment': 0.4, 'probability_threshold': 0.7, 'batch_size': 200}
+2024-12-05 11:38:33,095 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:33,103 - INFO - Batch statistics:
+2024-12-05 11:38:33,103 - INFO - Average probability: 0.066
+2024-12-05 11:38:33,103 - INFO - Max probability: 0.600
+2024-12-05 11:38:33,104 - INFO - Min probability: 0.000
+2024-12-05 11:38:33,104 - INFO - Fold 1 statistics:
+2024-12-05 11:38:33,104 - INFO - Total samples: 100
+2024-12-05 11:38:33,105 - INFO - True positives in fold: 25
+2024-12-05 11:38:33,105 - INFO - Predicted positives: 0
+2024-12-05 11:38:34,686 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:34,697 - INFO - Batch statistics:
+2024-12-05 11:38:34,697 - INFO - Average probability: 0.036
+2024-12-05 11:38:34,698 - INFO - Max probability: 0.400
+2024-12-05 11:38:34,698 - INFO - Min probability: 0.000
+2024-12-05 11:38:34,699 - INFO - Fold 2 statistics:
+2024-12-05 11:38:34,699 - INFO - Total samples: 100
+2024-12-05 11:38:34,699 - INFO - True positives in fold: 22
+2024-12-05 11:38:34,700 - INFO - Predicted positives: 0
+2024-12-05 11:38:36,450 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:36,460 - INFO - Batch statistics:
+2024-12-05 11:38:36,461 - INFO - Average probability: 0.032
+2024-12-05 11:38:36,461 - INFO - Max probability: 1.000
+2024-12-05 11:38:36,461 - INFO - Min probability: 0.000
+2024-12-05 11:38:36,463 - INFO - Fold 3 statistics:
+2024-12-05 11:38:36,463 - INFO - Total samples: 99
+2024-12-05 11:38:36,463 - INFO - True positives in fold: 7
+2024-12-05 11:38:36,464 - INFO - Predicted positives: 1
+2024-12-05 11:38:38,038 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:38,046 - INFO - Batch statistics:
+2024-12-05 11:38:38,046 - INFO - Average probability: 0.048
+2024-12-05 11:38:38,046 - INFO - Max probability: 1.000
+2024-12-05 11:38:38,047 - INFO - Min probability: 0.000
+2024-12-05 11:38:38,047 - INFO - Fold 4 statistics:
+2024-12-05 11:38:38,047 - INFO - Total samples: 99
+2024-12-05 11:38:38,049 - INFO - True positives in fold: 18
+2024-12-05 11:38:38,049 - INFO - Predicted positives: 1
+2024-12-05 11:38:39,746 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:39,754 - INFO - Batch statistics:
+2024-12-05 11:38:39,754 - INFO - Average probability: 0.063
+2024-12-05 11:38:39,754 - INFO - Max probability: 1.000
+2024-12-05 11:38:39,755 - INFO - Min probability: 0.000
+2024-12-05 11:38:39,755 - INFO - Fold 5 statistics:
+2024-12-05 11:38:39,755 - INFO - Total samples: 99
+2024-12-05 11:38:39,756 - INFO - True positives in fold: 16
+2024-12-05 11:38:39,756 - INFO - Predicted positives: 3
+2024-12-05 11:38:39,762 - INFO - Testing combination 20/25: {'debit_adjustment': 0.4, 'probability_threshold': 0.8, 'batch_size': 200}
+2024-12-05 11:38:41,576 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:41,586 - INFO - Batch statistics:
+2024-12-05 11:38:41,586 - INFO - Average probability: 0.066
+2024-12-05 11:38:41,586 - INFO - Max probability: 0.600
+2024-12-05 11:38:41,587 - INFO - Min probability: 0.000
+2024-12-05 11:38:41,587 - INFO - Fold 1 statistics:
+2024-12-05 11:38:41,587 - INFO - Total samples: 100
+2024-12-05 11:38:41,588 - INFO - True positives in fold: 25
+2024-12-05 11:38:41,588 - INFO - Predicted positives: 0
+2024-12-05 11:38:43,175 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:43,184 - INFO - Batch statistics:
+2024-12-05 11:38:43,184 - INFO - Average probability: 0.036
+2024-12-05 11:38:43,184 - INFO - Max probability: 0.400
+2024-12-05 11:38:43,185 - INFO - Min probability: 0.000
+2024-12-05 11:38:43,185 - INFO - Fold 2 statistics:
+2024-12-05 11:38:43,185 - INFO - Total samples: 100
+2024-12-05 11:38:43,186 - INFO - True positives in fold: 22
+2024-12-05 11:38:43,186 - INFO - Predicted positives: 0
+2024-12-05 11:38:44,832 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:44,840 - INFO - Batch statistics:
+2024-12-05 11:38:44,840 - INFO - Average probability: 0.032
+2024-12-05 11:38:44,840 - INFO - Max probability: 1.000
+2024-12-05 11:38:44,841 - INFO - Min probability: 0.000
+2024-12-05 11:38:44,841 - INFO - Fold 3 statistics:
+2024-12-05 11:38:44,841 - INFO - Total samples: 99
+2024-12-05 11:38:44,842 - INFO - True positives in fold: 7
+2024-12-05 11:38:44,842 - INFO - Predicted positives: 1
+2024-12-05 11:38:46,550 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:46,560 - INFO - Batch statistics:
+2024-12-05 11:38:46,560 - INFO - Average probability: 0.046
+2024-12-05 11:38:46,561 - INFO - Max probability: 1.000
+2024-12-05 11:38:46,561 - INFO - Min probability: 0.000
+2024-12-05 11:38:46,562 - INFO - Fold 4 statistics:
+2024-12-05 11:38:46,562 - INFO - Total samples: 99
+2024-12-05 11:38:46,562 - INFO - True positives in fold: 18
+2024-12-05 11:38:46,563 - INFO - Predicted positives: 1
+2024-12-05 11:38:48,252 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:48,260 - INFO - Batch statistics:
+2024-12-05 11:38:48,260 - INFO - Average probability: 0.063
+2024-12-05 11:38:48,261 - INFO - Max probability: 1.000
+2024-12-05 11:38:48,261 - INFO - Min probability: 0.000
+2024-12-05 11:38:48,262 - INFO - Fold 5 statistics:
+2024-12-05 11:38:48,262 - INFO - Total samples: 99
+2024-12-05 11:38:48,262 - INFO - True positives in fold: 16
+2024-12-05 11:38:48,262 - INFO - Predicted positives: 3
+2024-12-05 11:38:48,269 - INFO - Testing combination 21/25: {'debit_adjustment': 0.5, 'probability_threshold': 0.4, 'batch_size': 200}
+2024-12-05 11:38:50,381 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:50,393 - INFO - Batch statistics:
+2024-12-05 11:38:50,393 - INFO - Average probability: 0.081
+2024-12-05 11:38:50,394 - INFO - Max probability: 0.700
+2024-12-05 11:38:50,394 - INFO - Min probability: 0.000
+2024-12-05 11:38:50,395 - INFO - Fold 1 statistics:
+2024-12-05 11:38:50,395 - INFO - Total samples: 100
+2024-12-05 11:38:50,395 - INFO - True positives in fold: 25
+2024-12-05 11:38:50,395 - INFO - Predicted positives: 16
+2024-12-05 11:38:52,123 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:52,131 - INFO - Batch statistics:
+2024-12-05 11:38:52,131 - INFO - Average probability: 0.044
+2024-12-05 11:38:52,132 - INFO - Max probability: 0.500
+2024-12-05 11:38:52,132 - INFO - Min probability: 0.000
+2024-12-05 11:38:52,132 - INFO - Fold 2 statistics:
+2024-12-05 11:38:52,133 - INFO - Total samples: 100
+2024-12-05 11:38:52,133 - INFO - True positives in fold: 22
+2024-12-05 11:38:52,133 - INFO - Predicted positives: 8
+2024-12-05 11:38:53,541 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:53,549 - INFO - Batch statistics:
+2024-12-05 11:38:53,549 - INFO - Average probability: 0.036
+2024-12-05 11:38:53,550 - INFO - Max probability: 1.000
+2024-12-05 11:38:53,550 - INFO - Min probability: 0.000
+2024-12-05 11:38:53,551 - INFO - Fold 3 statistics:
+2024-12-05 11:38:53,551 - INFO - Total samples: 99
+2024-12-05 11:38:53,551 - INFO - True positives in fold: 7
+2024-12-05 11:38:53,552 - INFO - Predicted positives: 6
+2024-12-05 11:38:55,146 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:55,156 - INFO - Batch statistics:
+2024-12-05 11:38:55,157 - INFO - Average probability: 0.060
+2024-12-05 11:38:55,158 - INFO - Max probability: 1.000
+2024-12-05 11:38:55,158 - INFO - Min probability: 0.000
+2024-12-05 11:38:55,159 - INFO - Fold 4 statistics:
+2024-12-05 11:38:55,159 - INFO - Total samples: 99
+2024-12-05 11:38:55,159 - INFO - True positives in fold: 18
+2024-12-05 11:38:55,160 - INFO - Predicted positives: 10
+2024-12-05 11:38:56,538 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:56,545 - INFO - Batch statistics:
+2024-12-05 11:38:56,546 - INFO - Average probability: 0.071
+2024-12-05 11:38:56,546 - INFO - Max probability: 1.000
+2024-12-05 11:38:56,547 - INFO - Min probability: 0.000
+2024-12-05 11:38:56,547 - INFO - Fold 5 statistics:
+2024-12-05 11:38:56,547 - INFO - Total samples: 99
+2024-12-05 11:38:56,548 - INFO - True positives in fold: 16
+2024-12-05 11:38:56,548 - INFO - Predicted positives: 11
+2024-12-05 11:38:56,556 - INFO - Testing combination 22/25: {'debit_adjustment': 0.5, 'probability_threshold': 0.5, 'batch_size': 200}
+2024-12-05 11:38:58,080 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:58,090 - INFO - Batch statistics:
+2024-12-05 11:38:58,091 - INFO - Average probability: 0.081
+2024-12-05 11:38:58,091 - INFO - Max probability: 0.700
+2024-12-05 11:38:58,091 - INFO - Min probability: 0.000
+2024-12-05 11:38:58,092 - INFO - Fold 1 statistics:
+2024-12-05 11:38:58,092 - INFO - Total samples: 100
+2024-12-05 11:38:58,093 - INFO - True positives in fold: 25
+2024-12-05 11:38:58,093 - INFO - Predicted positives: 15
+2024-12-05 11:38:59,646 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:38:59,654 - INFO - Batch statistics:
+2024-12-05 11:38:59,654 - INFO - Average probability: 0.044
+2024-12-05 11:38:59,655 - INFO - Max probability: 0.500
+2024-12-05 11:38:59,655 - INFO - Min probability: 0.000
+2024-12-05 11:38:59,655 - INFO - Fold 2 statistics:
+2024-12-05 11:38:59,656 - INFO - Total samples: 100
+2024-12-05 11:38:59,656 - INFO - True positives in fold: 22
+2024-12-05 11:38:59,656 - INFO - Predicted positives: 8
+2024-12-05 11:39:01,216 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:01,224 - INFO - Batch statistics:
+2024-12-05 11:39:01,224 - INFO - Average probability: 0.036
+2024-12-05 11:39:01,225 - INFO - Max probability: 1.000
+2024-12-05 11:39:01,225 - INFO - Min probability: 0.000
+2024-12-05 11:39:01,226 - INFO - Fold 3 statistics:
+2024-12-05 11:39:01,226 - INFO - Total samples: 99
+2024-12-05 11:39:01,226 - INFO - True positives in fold: 7
+2024-12-05 11:39:01,226 - INFO - Predicted positives: 5
+2024-12-05 11:39:03,091 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:03,099 - INFO - Batch statistics:
+2024-12-05 11:39:03,100 - INFO - Average probability: 0.057
+2024-12-05 11:39:03,100 - INFO - Max probability: 1.000
+2024-12-05 11:39:03,100 - INFO - Min probability: 0.000
+2024-12-05 11:39:03,101 - INFO - Fold 4 statistics:
+2024-12-05 11:39:03,101 - INFO - Total samples: 99
+2024-12-05 11:39:03,101 - INFO - True positives in fold: 18
+2024-12-05 11:39:03,102 - INFO - Predicted positives: 9
+2024-12-05 11:39:08,040 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:08,048 - INFO - Batch statistics:
+2024-12-05 11:39:08,049 - INFO - Average probability: 0.071
+2024-12-05 11:39:08,049 - INFO - Max probability: 1.000
+2024-12-05 11:39:08,049 - INFO - Min probability: 0.000
+2024-12-05 11:39:08,050 - INFO - Fold 5 statistics:
+2024-12-05 11:39:08,050 - INFO - Total samples: 99
+2024-12-05 11:39:08,051 - INFO - True positives in fold: 16
+2024-12-05 11:39:08,051 - INFO - Predicted positives: 11
+2024-12-05 11:39:08,057 - INFO - Testing combination 23/25: {'debit_adjustment': 0.5, 'probability_threshold': 0.6, 'batch_size': 200}
+2024-12-05 11:39:09,593 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:09,605 - INFO - Batch statistics:
+2024-12-05 11:39:09,606 - INFO - Average probability: 0.081
+2024-12-05 11:39:09,606 - INFO - Max probability: 0.700
+2024-12-05 11:39:09,607 - INFO - Min probability: 0.000
+2024-12-05 11:39:09,607 - INFO - Fold 1 statistics:
+2024-12-05 11:39:09,607 - INFO - Total samples: 100
+2024-12-05 11:39:09,608 - INFO - True positives in fold: 25
+2024-12-05 11:39:09,608 - INFO - Predicted positives: 1
+2024-12-05 11:39:11,123 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:11,137 - INFO - Batch statistics:
+2024-12-05 11:39:11,137 - INFO - Average probability: 0.044
+2024-12-05 11:39:11,137 - INFO - Max probability: 0.500
+2024-12-05 11:39:11,138 - INFO - Min probability: 0.000
+2024-12-05 11:39:11,138 - INFO - Fold 2 statistics:
+2024-12-05 11:39:11,138 - INFO - Total samples: 100
+2024-12-05 11:39:11,139 - INFO - True positives in fold: 22
+2024-12-05 11:39:11,139 - INFO - Predicted positives: 0
+2024-12-05 11:39:12,748 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:12,757 - INFO - Batch statistics:
+2024-12-05 11:39:12,757 - INFO - Average probability: 0.031
+2024-12-05 11:39:12,758 - INFO - Max probability: 0.700
+2024-12-05 11:39:12,758 - INFO - Min probability: 0.000
+2024-12-05 11:39:12,759 - INFO - Fold 3 statistics:
+2024-12-05 11:39:12,759 - INFO - Total samples: 99
+2024-12-05 11:39:12,759 - INFO - True positives in fold: 7
+2024-12-05 11:39:12,759 - INFO - Predicted positives: 1
+2024-12-05 11:39:14,285 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:14,297 - INFO - Batch statistics:
+2024-12-05 11:39:14,297 - INFO - Average probability: 0.057
+2024-12-05 11:39:14,298 - INFO - Max probability: 1.000
+2024-12-05 11:39:14,298 - INFO - Min probability: 0.000
+2024-12-05 11:39:14,298 - INFO - Fold 4 statistics:
+2024-12-05 11:39:14,299 - INFO - Total samples: 99
+2024-12-05 11:39:14,299 - INFO - True positives in fold: 18
+2024-12-05 11:39:14,299 - INFO - Predicted positives: 2
+2024-12-05 11:39:15,957 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:15,965 - INFO - Batch statistics:
+2024-12-05 11:39:15,965 - INFO - Average probability: 0.071
+2024-12-05 11:39:15,966 - INFO - Max probability: 1.000
+2024-12-05 11:39:15,966 - INFO - Min probability: 0.000
+2024-12-05 11:39:15,967 - INFO - Fold 5 statistics:
+2024-12-05 11:39:15,967 - INFO - Total samples: 99
+2024-12-05 11:39:15,967 - INFO - True positives in fold: 16
+2024-12-05 11:39:15,967 - INFO - Predicted positives: 4
+2024-12-05 11:39:15,975 - INFO - Testing combination 24/25: {'debit_adjustment': 0.5, 'probability_threshold': 0.7, 'batch_size': 200}
+2024-12-05 11:39:17,505 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:17,513 - INFO - Batch statistics:
+2024-12-05 11:39:17,514 - INFO - Average probability: 0.081
+2024-12-05 11:39:17,514 - INFO - Max probability: 0.700
+2024-12-05 11:39:17,514 - INFO - Min probability: 0.000
+2024-12-05 11:39:17,515 - INFO - Fold 1 statistics:
+2024-12-05 11:39:17,515 - INFO - Total samples: 100
+2024-12-05 11:39:17,515 - INFO - True positives in fold: 25
+2024-12-05 11:39:17,516 - INFO - Predicted positives: 1
+2024-12-05 11:39:19,125 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:19,135 - INFO - Batch statistics:
+2024-12-05 11:39:19,136 - INFO - Average probability: 0.044
+2024-12-05 11:39:19,136 - INFO - Max probability: 0.500
+2024-12-05 11:39:19,136 - INFO - Min probability: 0.000
+2024-12-05 11:39:19,137 - INFO - Fold 2 statistics:
+2024-12-05 11:39:19,137 - INFO - Total samples: 100
+2024-12-05 11:39:19,137 - INFO - True positives in fold: 22
+2024-12-05 11:39:19,138 - INFO - Predicted positives: 0
+2024-12-05 11:39:20,850 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:20,860 - INFO - Batch statistics:
+2024-12-05 11:39:20,861 - INFO - Average probability: 0.031
+2024-12-05 11:39:20,861 - INFO - Max probability: 0.700
+2024-12-05 11:39:20,861 - INFO - Min probability: 0.000
+2024-12-05 11:39:20,862 - INFO - Fold 3 statistics:
+2024-12-05 11:39:20,862 - INFO - Total samples: 99
+2024-12-05 11:39:20,863 - INFO - True positives in fold: 7
+2024-12-05 11:39:20,863 - INFO - Predicted positives: 1
+2024-12-05 11:39:22,468 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:22,479 - INFO - Batch statistics:
+2024-12-05 11:39:22,479 - INFO - Average probability: 0.060
+2024-12-05 11:39:22,480 - INFO - Max probability: 1.000
+2024-12-05 11:39:22,480 - INFO - Min probability: 0.000
+2024-12-05 11:39:22,480 - INFO - Fold 4 statistics:
+2024-12-05 11:39:22,481 - INFO - Total samples: 99
+2024-12-05 11:39:22,481 - INFO - True positives in fold: 18
+2024-12-05 11:39:22,481 - INFO - Predicted positives: 2
+2024-12-05 11:39:23,916 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:23,924 - INFO - Batch statistics:
+2024-12-05 11:39:23,924 - INFO - Average probability: 0.071
+2024-12-05 11:39:23,925 - INFO - Max probability: 1.000
+2024-12-05 11:39:23,925 - INFO - Min probability: 0.000
+2024-12-05 11:39:23,925 - INFO - Fold 5 statistics:
+2024-12-05 11:39:23,925 - INFO - Total samples: 99
+2024-12-05 11:39:23,927 - INFO - True positives in fold: 16
+2024-12-05 11:39:23,927 - INFO - Predicted positives: 3
+2024-12-05 11:39:23,932 - INFO - Testing combination 25/25: {'debit_adjustment': 0.5, 'probability_threshold': 0.8, 'batch_size': 200}
+2024-12-05 11:39:25,596 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:25,610 - INFO - Batch statistics:
+2024-12-05 11:39:25,610 - INFO - Average probability: 0.081
+2024-12-05 11:39:25,611 - INFO - Max probability: 0.700
+2024-12-05 11:39:25,611 - INFO - Min probability: 0.000
+2024-12-05 11:39:25,611 - INFO - Fold 1 statistics:
+2024-12-05 11:39:25,612 - INFO - Total samples: 100
+2024-12-05 11:39:25,612 - INFO - True positives in fold: 25
+2024-12-05 11:39:25,612 - INFO - Predicted positives: 0
+2024-12-05 11:39:27,335 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:27,345 - INFO - Batch statistics:
+2024-12-05 11:39:27,346 - INFO - Average probability: 0.048
+2024-12-05 11:39:27,346 - INFO - Max probability: 0.900
+2024-12-05 11:39:27,346 - INFO - Min probability: 0.000
+2024-12-05 11:39:27,347 - INFO - Fold 2 statistics:
+2024-12-05 11:39:27,347 - INFO - Total samples: 100
+2024-12-05 11:39:27,347 - INFO - True positives in fold: 22
+2024-12-05 11:39:27,348 - INFO - Predicted positives: 1
+2024-12-05 11:39:29,144 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:29,158 - INFO - Batch statistics:
+2024-12-05 11:39:29,159 - INFO - Average probability: 0.036
+2024-12-05 11:39:29,159 - INFO - Max probability: 1.000
+2024-12-05 11:39:29,160 - INFO - Min probability: 0.000
+2024-12-05 11:39:29,160 - INFO - Fold 3 statistics:
+2024-12-05 11:39:29,160 - INFO - Total samples: 99
+2024-12-05 11:39:29,161 - INFO - True positives in fold: 7
+2024-12-05 11:39:29,161 - INFO - Predicted positives: 1
+2024-12-05 11:39:30,633 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:30,641 - INFO - Batch statistics:
+2024-12-05 11:39:30,641 - INFO - Average probability: 0.057
+2024-12-05 11:39:30,642 - INFO - Max probability: 1.000
+2024-12-05 11:39:30,642 - INFO - Min probability: 0.000
+2024-12-05 11:39:30,642 - INFO - Fold 4 statistics:
+2024-12-05 11:39:30,643 - INFO - Total samples: 99
+2024-12-05 11:39:30,643 - INFO - True positives in fold: 18
+2024-12-05 11:39:30,643 - INFO - Predicted positives: 1
+2024-12-05 11:39:32,107 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 11:39:32,115 - INFO - Batch statistics:
+2024-12-05 11:39:32,115 - INFO - Average probability: 0.071
+2024-12-05 11:39:32,115 - INFO - Max probability: 1.000
+2024-12-05 11:39:32,116 - INFO - Min probability: 0.000
+2024-12-05 11:39:32,116 - INFO - Fold 5 statistics:
+2024-12-05 11:39:32,116 - INFO - Total samples: 99
+2024-12-05 11:39:32,117 - INFO - True positives in fold: 16
+2024-12-05 11:39:32,117 - INFO - Predicted positives: 3
+2024-12-05 11:39:32,139 - INFO - Best parameters: {'debit_adjustment': 0.4, 'probability_threshold': 0.4, 'batch_size': 200.0, 'precision': 1.0, 'recall': 0.6207669552669552, 'f1': 0.7531997180777669, 'std_dev': 0.12903863873830662}

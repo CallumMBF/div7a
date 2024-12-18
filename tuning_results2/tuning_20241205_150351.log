@@ -1,0 +1,112 @@
+2024-12-05 15:03:51,522 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 15:03:51,829 - INFO - Initial data: 240 total accounts, 119 Division 7A accounts
+2024-12-05 15:03:51,829 - INFO - Filtered out 0 accounts. Details saved to 'filtered_out_accounts.csv'
+2024-12-05 15:03:51,849 - INFO - After filtering: 119 Division 7A accounts out of 240 total accounts
+2024-12-05 15:03:51,850 - INFO - Testing combination 1/135: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'max_tokens': 500, 'batch_size': 200}
+2024-12-05 15:04:01,843 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:04:01,851 - INFO - Raw API response text: Account: Special Purpose Vehicle Account  
+Probability: 0.4  
+Reasoning: This account may have some Division 7A indicators due to its potential use for related party transactions, but it lacks clear ownership or relationship terms.
+
+Account: Distribution Account Payable  
+Probability: 0.2  
+Reasoning: This account is unlikely to be Division 7A related as it appears to be a standard business account without direct indicators of personal use.
+
+Account: Entity B Current Account  
+Probability: 0.2  
+Reasoning: The name suggests a generic business account with no clear indicators of Division 7A loans or payments.
+
+Account: Internal Funding Account  
+Probability: 0.4  
+Reasoning: While it may involve internal transactions, the lack of specific terms makes it unclear if it masks Division 7A arrangements.
+
+Account: Personal Transactions Clearing  
+Probability: 0.8  
+Reasoning: This account likely masks personal transactions that could be related to Division 7A loans, given the direct reference to personal transactions.
+
+Account: Car Loan - Non-Current  
+Probability: 0.2  
+Reasoning: This account is unlikely to be Division 7A related as it appears to be a standard loan for a vehicle without personal or related party indicators.
+
+Account: Advance to Shareholder  
+Probability: 1.0  
+Reasoning: This account directly indicates a loan to a shareholder, making it definitely related to Division 7A.
+
+Account: Director's Loan  
+Probability: 1.0  
+Reasoning: This account clearly represents a loan to a director, which is a direct indicator of Division 7A.
+
+Account: Loan to Related Individual  
+Probability: 1.0  
+Reasoning: This account explicitly indicates a loan to a related individual, confirming it as Division 7A related.
+
+Account: Loan to Owner's Trust  
+Probability: 1.0  
+Reasoning: This account indicates a loan to a trust associated with the owner, making it definitely Division 7A related.
+
+Account: Loan to Executive  
+Probability: 1.0  
+Reasoning: This account represents a loan to an executive, which is a direct indicator of Division 7A.
+
+Account: Loan to Stakeholder  
+Probability: 1.0  
+Reasoning: This account indicates a loan to a stakeholder, confirming it as Division 7A related.
+
+Account: Director's Advance  
+Probability: 1.0  
+Reasoning: This account clearly indicates an advance
+2024-12-05 15:04:01,856 - INFO - Parsed batch results: [{'account_name': 'Special Purpose Vehicle Account', 'probability': 0.4, 'reasoning': 'This account may have some Division 7A indicators due to its potential use for related party transactions, but it lacks clear ownership or relationship terms.'}, {'account_name': 'Distribution Account Payable', 'probability': 0.2, 'reasoning': 'This account is unlikely to be Division 7A related as it appears to be a standard business account without direct indicators of personal use.'}, {'account_name': 'Entity B Current Account', 'probability': 0.2, 'reasoning': 'The name suggests a generic business account with no clear indicators of Division 7A loans or payments.'}, {'account_name': 'Internal Funding Account', 'probability': 0.4, 'reasoning': 'While it may involve internal transactions, the lack of specific terms makes it unclear if it masks Division 7A arrangements.'}, {'account_name': 'Personal Transactions Clearing', 'probability': 0.8, 'reasoning': 'This account likely masks personal transactions that could be related to Division 7A loans, given the direct reference to personal transactions.'}, {'account_name': 'Car Loan - Non-Current', 'probability': 0.2, 'reasoning': 'This account is unlikely to be Division 7A related as it appears to be a standard loan for a vehicle without personal or related party indicators.'}, {'account_name': 'Advance to Shareholder', 'probability': 1.0, 'reasoning': 'This account directly indicates a loan to a shareholder, making it definitely related to Division 7A.'}, {'account_name': "Director's Loan", 'probability': 1.0, 'reasoning': 'This account clearly represents a loan to a director, which is a direct indicator of Division 7A.'}, {'account_name': 'Loan to Related Individual', 'probability': 1.0, 'reasoning': 'This account explicitly indicates a loan to a related individual, confirming it as Division 7A related.'}, {'account_name': "Loan to Owner's Trust", 'probability': 1.0, 'reasoning': 'This account indicates a loan to a trust associated with the owner, making it definitely Division 7A related.'}, {'account_name': 'Loan to Executive', 'probability': 1.0, 'reasoning': 'This account represents a loan to an executive, which is a direct indicator of Division 7A.'}, {'account_name': 'Loan to Stakeholder', 'probability': 1.0, 'reasoning': 'This account indicates a loan to a stakeholder, confirming it as Division 7A related.'}, {'account_name': "Director's Advance", 'probability': 1.0, 'reasoning': 'This account clearly indicates an advance'}]
+2024-12-05 15:04:01,858 - INFO - Detection results structure: [{'account_name': 'Special Purpose Vehicle Account', 'probability': 0.4, 'reasoning': 'This account may have some Division 7A indicators due to its potential use for related party transactions, but it lacks clear ownership or relationship terms.'}, {'account_name': 'Distribution Account Payable', 'probability': 0.2, 'reasoning': 'This account is unlikely to be Division 7A related as it appears to be a standard business account without direct indicators of personal use.'}]
+2024-12-05 15:04:01,861 - ERROR - No result found for account: Partner Loan Facility
+2024-12-05 15:04:01,861 - ERROR - No result found for account: Family Equity Loan
+2024-12-05 15:04:01,862 - ERROR - No result found for account: Owner's Financial Withdrawal
+2024-12-05 15:04:01,862 - ERROR - No result found for account: Director Loan Account
+2024-12-05 15:04:01,863 - ERROR - No result found for account: Family Member Borrowing
+2024-12-05 15:04:01,863 - ERROR - No result found for account: Loan to Controlling Shareholder
+2024-12-05 15:04:01,864 - ERROR - No result found for account: Loan to Shareholding Partner
+2024-12-05 15:04:01,864 - ERROR - No result found for account: Loan to Partnership Stakeholder
+2024-12-05 15:04:01,865 - ERROR - No result found for account: Loan to Affiliate
+2024-12-05 15:04:01,865 - ERROR - No result found for account: Owner's Equity Withdrawal
+2024-12-05 15:04:01,866 - ERROR - No result found for account: Loan to Parent Trust
+2024-12-05 15:04:01,866 - ERROR - No result found for account: Cash on Hand
+2024-12-05 15:04:01,866 - ERROR - No result found for account: CBA Business Overdraft
+2024-12-05 15:04:01,867 - ERROR - No result found for account: Stock on Hand
+2024-12-05 15:04:01,867 - ERROR - No result found for account: Accum. Depr.Plant & Equipment
+2024-12-05 15:04:01,868 - ERROR - No result found for account: Less Accum Depreciation
+2024-12-05 15:04:01,868 - ERROR - No result found for account: Less accumulated depreciation
+2024-12-05 15:04:01,869 - ERROR - No result found for account: Low value pool
+2024-12-05 15:04:01,869 - ERROR - No result found for account: Preliminary expenses - at cost
+2024-12-05 15:04:01,870 - ERROR - No result found for account: Accounts Receivable (A/R) - EUR
+2024-12-05 15:04:01,870 - ERROR - No result found for account: Loan to Xero
+2024-12-05 15:04:01,871 - ERROR - No result found for account: PrepyamentsA
+2024-12-05 15:04:01,871 - ERROR - No result found for account: Sundry Debtors
+2024-12-05 15:04:01,872 - ERROR - No result found for account: Investments - Australia And New Zealand Banking Group Limited
+2024-12-05 15:04:01,872 - ERROR - No result found for account: Investments - Colonial First State Personal Pension Plan - Balanced
+2024-12-05 15:04:01,873 - ERROR - No result found for account: Investments - South32 Limited
+2024-12-05 15:04:01,873 - ERROR - No result found for account: Investments - Westpac Banking Corporation
+2024-12-05 15:04:01,874 - ERROR - No result found for account: ANZ Bank
+2024-12-05 15:04:01,874 - ERROR - No result found for account: Cash Account
+2024-12-05 15:04:01,875 - ERROR - No result found for account: Cash At Bank - Westpac Cheque Account
+2024-12-05 15:04:01,875 - ERROR - No result found for account: cash at bank-cash management account
+2024-12-05 15:04:01,876 - ERROR - No result found for account: cash at bank-cash management account 3
+2024-12-05 15:04:01,876 - ERROR - No result found for account: Cash on Hand
+2024-12-05 15:04:01,877 - ERROR - No result found for account: CBA
+2024-12-05 15:04:01,877 - ERROR - No result found for account: CBA Business Overdraft
+2024-12-05 15:04:01,877 - INFO - Batch statistics:
+2024-12-05 15:04:01,878 - INFO - Average probability: 0.192
+2024-12-05 15:04:01,878 - INFO - Max probability: 1.000
+2024-12-05 15:04:01,878 - INFO - Min probability: 0.000
+2024-12-05 15:04:13,534 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:04:13,541 - INFO - === Detection Results ===
+2024-12-05 15:04:13,541 - INFO - Number of accounts sent: 48
+2024-12-05 15:04:13,542 - INFO - Number of results received: 12
+2024-12-05 15:04:13,542 - INFO - First few detection results:
+2024-12-05 15:04:13,542 - INFO - Result: {'account_name': 'Special Purpose Vehicle Account', 'probability': 0.4, 'reasoning': 'This account may have some Division 7A indicators due to its potential use for related party transactions, but it lacks clear ownership or relationship terms.'}
+2024-12-05 15:04:13,543 - INFO - Result: {'account_name': 'Distribution Account Payable', 'probability': 0.2, 'reasoning': 'This account is unlikely to be Division 7A related as it appears to be a standard business account without direct indicators of personal use.'}
+2024-12-05 15:04:13,543 - INFO - Result: {'account_name': 'Entity B Current Account', 'probability': 0.2, 'reasoning': 'The name suggests a generic business account with no clear indication of Division 7A relationships or transactions.'}
+2024-12-05 15:04:13,544 - INFO - Result: {'account_name': 'Internal Funding Account', 'probability': 0.4, 'reasoning': 'While it may involve internal transactions, the lack of specific indicators makes it unclear if it masks Division 7A arrangements.'}
+2024-12-05 15:04:13,544 - INFO - Result: {'account_name': 'Personal Transactions Clearing', 'probability': 0.8, 'reasoning': 'This account likely masks personal transactions that could be related to Division 7A loans, given the direct reference to personal transactions.'}
+2024-12-05 15:04:13,545 - INFO - === Results Map ===
+2024-12-05 15:04:13,545 - INFO - Number of mapped results: 12
+2024-12-05 15:04:13,545 - INFO - First few mapped accounts:
+2024-12-05 15:04:13,546 - INFO - Mapped account: Special Purpose Vehicle Account

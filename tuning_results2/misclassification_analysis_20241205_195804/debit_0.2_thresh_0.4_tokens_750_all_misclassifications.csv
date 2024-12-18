@@ -1,0 +1,86 @@
+AccountName,MisclassificationRate,MisclassificationCount,TotalAppearances,SourceAccountType,SourceAccountSubType,AccountTypesName,LedgerSide,Balance,WorkpaperRecordsName,WorksheetName,GroundTruth
+Special Purpose Vehicle Account,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Distribution Account Payable,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Entity B Current Account,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Internal Funding Account,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Personal Transactions Clearing,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Car Loan - Non-Current,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Advance to Shareholder,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Director's Loan,0.0,0,9,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Loan to Related Individual,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Loan to Owner's Trust,0.0,0,3,Assets,Current Assets,Loans to Members,1,12127.97,,,1
+Loan to Executive,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Loan to Stakeholder,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Director's Advance,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Partner Loan Facility,0.0,0,6,Assets,Current Assets,Other Assets,1,500.0,,,1
+Family Equity Loan,0.0,0,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Owner's Financial Withdrawal,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Director Loan Account,0.0,0,9,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Family Member Borrowing,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Controlling Shareholder,0.0,0,9,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Shareholding Partner,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Partnership Stakeholder,0.3333333333333333,3,9,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Affiliate,1.0,3,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Owner's Equity Withdrawal,1.0,3,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Parent Trust,1.0,3,3,Assets,Current Assets,Other Assets,1,120172.29,,,1
+Working Capital Advance,1.0,3,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Special Drawing Rights,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Loan to Director's Family,0.0,0,3,Liabilities,Non-current Liabilities,Borrowings,-1,-459013.48,,,1
+Loan to Beneficiary Trust,0.0,0,9,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Private Advance Account,0.0,0,6,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Advance to Major Shareholder,0.0,0,3,Assets,Current Assets,Other Assets,1,496107.51,,,1
+Shareholder Current Account,0.16666666666666666,1,6,Assets,Current Assets,Other Assets,1,500.0,,,1
+Beneficiary Partner Loan,0.0,0,6,Assets,Current Assets,Other Assets,1,500.0,,,1
+Equity Withdrawal Loan,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Family Member Advance,0.0,0,6,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Beneficiary,0.5,3,6,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Shareholder Loan,0.0,0,6,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Associate Loan Facility,0.0,0,12,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Founder,0.0,0,6,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Sibling,0.0,0,6,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Parent,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Owner Advance Account,0.16666666666666666,2,12,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Trustee,1.0,6,6,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Shareholder Borrowing Account,1.0,3,3,Assets,Current Assets,Other Assets,1,466338.88,,,1
+Tesla Loan - Non-Current,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Short Term Advance Account,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Temporary Funding Account,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Corporate Development Fund,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Owner's Draw,0.0,0,6,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Loan to Controlling Partner,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Director Financial Loan,0.0,0,6,Assets,Current Assets,Loans to Members,1,182305.42,,,1
+Owner Withdrawable Loan,0.0,0,6,Assets,Current Assets,Loans to Members,-1,483138.03,,,1
+Loan to Partner Trust,0.0,0,3,Liabilities,Non-current Liabilities,Borrowings,-1,-471656.62,,,1
+Associate Loan,0.0,0,3,Liabilities,Non-current Liabilities,Borrowings,1,-101153.59,,,1
+Loan to Related Party Entity,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Sole Proprietor,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Partner Financial Advance,0.0,0,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Child,0.3333333333333333,1,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Partner Equity Withdrawal,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Family-Owned Business,0.0,0,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Principal Owner Loan,0.6666666666666666,2,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Inter-Company Loan,1.0,3,3,Assets,Current Assets,Other Assets,1,222683.05,,,1
+Business Development Loan,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Consulting Fees Receivable,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Private Company Advance,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Trust Beneficiary Account,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Management Participation Account,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Temporary Shareholder Loan,0.5,3,6,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Loan to Related Business,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Loan to Associate,0.3333333333333333,2,6,Assets,Current Assets,Loans to Members,1,1556.69,,,1
+Loan to Shareholding Family,0.0,0,6,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Director's Trust,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Shareholder Advance,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Director Loan Receivable,1.0,3,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Business Owner,1.0,3,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Controlled Entity,0.3333333333333333,3,9,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Current Account - J Smith,0.0,0,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Business Owner Advance,0.0,0,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Shareholder Loan Facility,0.0,0,3,Assets,Current Assets,Loans to Members,-1,220049.24,,,1
+Owner's Partner Loan,0.0,0,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Beneficiary Loan Facility,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Loan to Executive Partner,0.0,0,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Equity Loan to Director,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Equity Holder Financial Loan,0.0,0,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Family Member Loan,0.0,0,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Owner Loan Receivable,0.6666666666666666,2,3,Assets,Current Assets,Other Assets,-1,500.0,,,1

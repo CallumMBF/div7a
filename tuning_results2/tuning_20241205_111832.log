@@ -1,0 +1,2 @@
+2024-12-05 11:18:32,392 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 11:18:32,797 - INFO - Testing combination 1/25: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'batch_size': 10}

@@ -1,0 +1,278 @@
+2024-12-05 15:17:25,200 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 15:17:25,596 - INFO - Initial data: 240 total accounts, 119 Division 7A accounts
+2024-12-05 15:17:25,603 - INFO - Filtered out 0 accounts. Details saved to 'filtered_out_accounts.csv'
+2024-12-05 15:17:25,608 - INFO - After filtering: 119 Division 7A accounts out of 240 total accounts
+2024-12-05 15:17:25,608 - INFO - Testing combination 1/1: {'debit_adjustment': 0.5, 'probability_threshold': 0.5, 'max_tokens': 500, 'batch_size': 50}
+2024-12-05 15:17:31,490 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:17:31,490 - WARNING - API didn't return result for Loan to Controlling Shareholder, using default
+2024-12-05 15:17:31,490 - WARNING - API didn't return result for CBA, using default
+2024-12-05 15:17:31,490 - WARNING - API didn't return result for Low value pool, using default
+2024-12-05 15:17:31,490 - WARNING - API didn't return result for Loan to Shareholding Partner, using default
+2024-12-05 15:17:31,501 - WARNING - API didn't return result for CBA Business Overdraft, using default
+2024-12-05 15:17:31,501 - WARNING - API didn't return result for Director Loan Account, using default
+2024-12-05 15:17:31,501 - WARNING - API didn't return result for ANZ Bank, using default
+2024-12-05 15:17:31,501 - WARNING - API didn't return result for Less accumulated depreciation, using default
+2024-12-05 15:17:31,501 - WARNING - API didn't return result for Family Member Borrowing, using default
+2024-12-05 15:17:31,503 - WARNING - API didn't return result for Investments - Westpac Banking Corporation, using default
+2024-12-05 15:17:31,503 - WARNING - API didn't return result for Investments - Australia And New Zealand Banking Group Limited, using default
+2024-12-05 15:17:31,503 - WARNING - API didn't return result for Owner's Equity Withdrawal, using default
+2024-12-05 15:17:31,504 - WARNING - API didn't return result for Loan to Xero, using default
+2024-12-05 15:17:31,504 - WARNING - API didn't return result for Stock on Hand, using default
+2024-12-05 15:17:31,504 - WARNING - API didn't return result for Loan to Partnership Stakeholder, using default
+2024-12-05 15:17:31,505 - WARNING - API didn't return result for PrepyamentsA, using default
+2024-12-05 15:17:31,505 - WARNING - API didn't return result for Family Equity Loan, using default
+2024-12-05 15:17:31,505 - WARNING - API didn't return result for Preliminary expenses - at cost, using default
+2024-12-05 15:17:31,506 - WARNING - API didn't return result for Cash At Bank - Westpac Cheque Account, using default
+2024-12-05 15:17:31,506 - WARNING - API didn't return result for Owner's Financial Withdrawal, using default
+2024-12-05 15:17:31,506 - WARNING - API didn't return result for Loan to Affiliate, using default
+2024-12-05 15:17:31,507 - WARNING - API didn't return result for Investments - South32 Limited, using default
+2024-12-05 15:17:31,507 - WARNING - API didn't return result for Cash Account, using default
+2024-12-05 15:17:31,507 - WARNING - API didn't return result for cash at bank-cash management account, using default
+2024-12-05 15:17:31,508 - WARNING - API didn't return result for Loan to Parent Trust, using default
+2024-12-05 15:17:31,508 - WARNING - API didn't return result for Sundry Debtors, using default
+2024-12-05 15:17:31,508 - WARNING - API didn't return result for cash at bank-cash management account 3, using default
+2024-12-05 15:17:31,509 - WARNING - API didn't return result for Investments - Colonial First State Personal Pension Plan - Balanced, using default
+2024-12-05 15:17:31,509 - WARNING - API didn't return result for Accum. Depr.Plant & Equipment, using default
+2024-12-05 15:17:31,509 - WARNING - API didn't return result for Less Accum Depreciation, using default
+2024-12-05 15:17:31,510 - WARNING - API didn't return result for Accounts Receivable (A/R) - EUR, using default
+2024-12-05 15:17:31,510 - WARNING - API didn't return result for Cash on Hand, using default
+2024-12-05 15:17:31,510 - INFO - Detection results structure: [{'account_name': 'Special Purpose Vehicle Account', 'probability': 0.4, 'reasoning': 'This account may have some Division 7A indicators due to its potential use for related party transactions, but it is not explicitly clear.'}, {'account_name': 'Distribution Account Payable', 'probability': 0.2, 'reasoning': 'This account is unlikely to be Division 7A related, as it typically pertains to business operations without direct personal implications.'}]
+2024-12-05 15:17:31,515 - INFO - Batch statistics:
+2024-12-05 15:17:31,515 - INFO - Average probability: 0.188
+2024-12-05 15:17:31,516 - INFO - Max probability: 1.000
+2024-12-05 15:17:31,516 - INFO - Min probability: 0.000
+2024-12-05 15:17:41,422 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:17:41,430 - INFO - === Detection Results ===
+2024-12-05 15:17:41,430 - INFO - Number of accounts sent: 48
+2024-12-05 15:17:41,430 - INFO - Number of results received: 13
+2024-12-05 15:17:41,431 - INFO - First few detection results:
+2024-12-05 15:17:41,431 - INFO - Result: {'account_name': 'Special Purpose Vehicle Account', 'probability': 0.4, 'reasoning': 'This account may have some Division 7A indicators due to its potential use for related party transactions, but it is not explicitly clear.'}
+2024-12-05 15:17:41,431 - INFO - Result: {'account_name': 'Distribution Account Payable', 'probability': 0.2, 'reasoning': 'This account is unlikely to be Division 7A related as it appears to be a standard business account without direct personal or related party indicators.'}
+2024-12-05 15:17:41,432 - INFO - Result: {'account_name': 'Entity B Current Account', 'probability': 0.2, 'reasoning': 'The name suggests a generic business account with no clear indicators of Division 7A loans or payments.'}
+2024-12-05 15:17:41,432 - INFO - Result: {'account_name': 'Internal Funding Account', 'probability': 0.6, 'reasoning': 'This account could potentially mask related party transactions, indicating a suspicious nature but lacking clear ownership terms.'}
+2024-12-05 15:17:41,433 - INFO - Result: {'account_name': 'Personal Transactions Clearing', 'probability': 0.8, 'reasoning': 'The account name suggests a strong likelihood of masking personal transactions, which could relate to Division 7A arrangements.'}
+2024-12-05 15:17:41,433 - INFO - === Results Map ===
+2024-12-05 15:17:41,434 - INFO - Number of mapped results: 13
+2024-12-05 15:17:41,434 - INFO - First few mapped accounts:
+2024-12-05 15:17:41,434 - INFO - Mapped account: Special Purpose Vehicle Account
+2024-12-05 15:17:49,253 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:17:49,253 - WARNING - API didn't return result for Plant and equipment at cost, using default
+2024-12-05 15:17:49,253 - WARNING - API didn't return result for Motor Vehicles, using default
+2024-12-05 15:17:49,253 - WARNING - API didn't return result for Investments - Telstra Group Limited, using default
+2024-12-05 15:17:49,253 - WARNING - API didn't return result for Office Equipment, using default
+2024-12-05 15:17:49,253 - WARNING - API didn't return result for Shareholder Borrowing Account, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Loan Director, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Westpac Bank, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Investments - CSL Limited, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for ANZ Business Account, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Loan to Founder, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for OPENING Beef stock, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Investments - Ishares Global 100 ETF - Chess Depositary Interests 1:1 Ishglb100, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Trade Debtors, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Business Transaction Account, using default
+2024-12-05 15:17:49,269 - WARNING - API didn't return result for Associate Loan Facility, using default
+2024-12-05 15:17:49,272 - WARNING - API didn't return result for Anz, using default
+2024-12-05 15:17:49,272 - WARNING - API didn't return result for CBA Bank Account, using default
+2024-12-05 15:17:49,272 - WARNING - API didn't return result for ANZ Bank Account, using default
+2024-12-05 15:17:49,273 - WARNING - API didn't return result for Investments - Toyota Motor Corp, using default
+2024-12-05 15:17:49,273 - WARNING - API didn't return result for Business Savings Account, using default
+2024-12-05 15:17:49,273 - WARNING - API didn't return result for ANZ Offset, using default
+2024-12-05 15:17:49,274 - WARNING - API didn't return result for Owner Advance Account, using default
+2024-12-05 15:17:49,274 - WARNING - API didn't return result for Borrowing Costs, using default
+2024-12-05 15:17:49,274 - WARNING - API didn't return result for Westpac Bank Account, using default
+2024-12-05 15:17:49,275 - WARNING - API didn't return result for Ali Bank Account, using default
+2024-12-05 15:17:49,275 - WARNING - API didn't return result for Bank account1, using default
+2024-12-05 15:17:49,275 - WARNING - API didn't return result for Cash At Bank - Balmain Private Cash Management, using default
+2024-12-05 15:17:49,275 - WARNING - API didn't return result for Loan to Parent, using default
+2024-12-05 15:17:49,276 - WARNING - API didn't return result for Loan to Sibling, using default
+2024-12-05 15:17:49,276 - WARNING - API didn't return result for Cash at Bank, using default
+2024-12-05 15:17:49,277 - WARNING - API didn't return result for Loan to Trustee, using default
+2024-12-05 15:17:49,277 - INFO - Detection results structure: [{'account_name': 'Working Capital Advance', 'probability': 0.2, 'reasoning': 'This account name is generic and does not explicitly indicate a related party transaction, but it could potentially mask personal use.'}, {'account_name': 'Special Drawing Rights', 'probability': 0.2, 'reasoning': 'The term is vague and does not clearly indicate a Division 7A relationship, but it may involve indirect transactions.'}]
+2024-12-05 15:17:49,281 - INFO - Batch statistics:
+2024-12-05 15:17:49,282 - INFO - Average probability: 0.208
+2024-12-05 15:17:49,282 - INFO - Max probability: 1.000
+2024-12-05 15:17:49,282 - INFO - Min probability: 0.000
+2024-12-05 15:17:57,221 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:17:57,229 - INFO - === Detection Results ===
+2024-12-05 15:17:57,230 - INFO - Number of accounts sent: 48
+2024-12-05 15:17:57,230 - INFO - Number of results received: 13
+2024-12-05 15:17:57,230 - INFO - First few detection results:
+2024-12-05 15:17:57,231 - INFO - Result: {'account_name': 'Working Capital Advance', 'probability': 0.2, 'reasoning': 'This account name is generic and does not explicitly indicate a related party transaction, but it could potentially mask personal use.'}
+2024-12-05 15:17:57,231 - INFO - Result: {'account_name': 'Special Drawing Rights', 'probability': 0.2, 'reasoning': 'The term is vague and does not clearly indicate a Division 7A relationship, but it may involve indirect transactions.'}
+2024-12-05 15:17:57,232 - INFO - Result: {'account_name': "Loan to Director's Family", 'probability': 1.0, 'reasoning': "This account directly involves a director's family, clearly indicating a Division 7A loan."}
+2024-12-05 15:17:57,233 - INFO - Result: {'account_name': 'Loan to Beneficiary Trust', 'probability': 0.8, 'reasoning': 'This account suggests a clear relationship with a trust that may benefit a related party, indicating a high likelihood of Division 7A relevance.'}
+2024-12-05 15:17:57,233 - INFO - Result: {'account_name': 'Private Advance Account', 'probability': 0.4, 'reasoning': 'The term "private" is vague and could potentially mask personal transactions, but it lacks clear indicators of Division 7A.'}
+2024-12-05 15:17:57,233 - INFO - === Results Map ===
+2024-12-05 15:17:57,234 - INFO - Number of mapped results: 12
+2024-12-05 15:17:57,234 - INFO - First few mapped accounts:
+2024-12-05 15:17:57,234 - INFO - Mapped account: Working Capital Advance
+2024-12-05 15:18:07,440 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:18:07,440 - WARNING - API didn't return result for Directors Loan Account, using default
+2024-12-05 15:18:07,440 - WARNING - API didn't return result for Business Bank Account, using default
+2024-12-05 15:18:07,440 - WARNING - API didn't return result for cash sales, using default
+2024-12-05 15:18:07,440 - WARNING - API didn't return result for Accrued Revenue/Deferred Revenue #22, using default
+2024-12-05 15:18:07,440 - WARNING - API didn't return result for Partner Loan Facility, using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for Shareholder Current Account, using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for Inventory, using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for WBC Account, using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for Accounts Receivable (A/R), using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for Investments - Apple Inc., using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for Borrowing Cost, using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for Investments - TPG Telecom Limited., using default
+2024-12-05 15:18:07,445 - WARNING - API didn't return result for Allowance for Bad Debt, using default
+2024-12-05 15:18:07,448 - WARNING - API didn't return result for Loan Xero, using default
+2024-12-05 15:18:07,448 - WARNING - API didn't return result for Partner Financial Advance, using default
+2024-12-05 15:18:07,448 - WARNING - API didn't return result for Less Accumulated Depreciation on Office Equipment, using default
+2024-12-05 15:18:07,449 - WARNING - API didn't return result for Loan to Founder, using default
+2024-12-05 15:18:07,449 - WARNING - API didn't return result for Loan to Child, using default
+2024-12-05 15:18:07,449 - WARNING - API didn't return result for Business Bank Account #1, using default
+2024-12-05 15:18:07,450 - WARNING - API didn't return result for Cattle on Hand, using default
+2024-12-05 15:18:07,450 - WARNING - API didn't return result for Loan to Family-Owned Business, using default
+2024-12-05 15:18:07,450 - WARNING - API didn't return result for Associate Loan Facility, using default
+2024-12-05 15:18:07,451 - WARNING - API didn't return result for Plant & Equipment At Cost, using default
+2024-12-05 15:18:07,451 - WARNING - API didn't return result for Stock-on-Hand, using default
+2024-12-05 15:18:07,451 - WARNING - API didn't return result for Principal Owner Loan, using default
+2024-12-05 15:18:07,451 - WARNING - API didn't return result for cash at bank-nab operating account, using default
+2024-12-05 15:18:07,452 - WARNING - API didn't return result for Investments - Bank of China Ltd, using default
+2024-12-05 15:18:07,452 - WARNING - API didn't return result for Ali Bank Account, using default
+2024-12-05 15:18:07,452 - WARNING - API didn't return result for Motor Vehicle at Cost, using default
+2024-12-05 15:18:07,453 - WARNING - API didn't return result for Chase Bank, using default
+2024-12-05 15:18:07,453 - WARNING - API didn't return result for Inter-Company Loan, using default
+2024-12-05 15:18:07,453 - WARNING - API didn't return result for Petty Cash, using default
+2024-12-05 15:18:07,454 - WARNING - API didn't return result for Partner Equity Withdrawal, using default
+2024-12-05 15:18:07,454 - INFO - Detection results structure: [{'account_name': 'Tesla Loan - Non-Current', 'probability': 0.4, 'reasoning': 'While it suggests a loan, the lack of clarity on the relationship with shareholders or associates makes it uncertain.'}, {'account_name': 'Short Term Advance Account', 'probability': 0.6, 'reasoning': 'The term "advance" could mask personal use, indicating potential Division 7A implications, but lacks direct indicators.'}]
+2024-12-05 15:18:07,459 - INFO - Batch statistics:
+2024-12-05 15:18:07,459 - INFO - Average probability: 0.208
+2024-12-05 15:18:07,460 - INFO - Max probability: 1.000
+2024-12-05 15:18:07,461 - INFO - Min probability: 0.000
+2024-12-05 15:18:15,645 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:18:15,652 - INFO - === Detection Results ===
+2024-12-05 15:18:15,653 - INFO - Number of accounts sent: 48
+2024-12-05 15:18:15,653 - INFO - Number of results received: 13
+2024-12-05 15:18:15,653 - INFO - First few detection results:
+2024-12-05 15:18:15,653 - INFO - Result: {'account_name': 'Tesla Loan - Non-Current', 'probability': 0.4, 'reasoning': 'While the term "loan" suggests a financial arrangement, the lack of clarity regarding the parties involved makes it uncertain if it relates to Division 7A.'}
+2024-12-05 15:18:15,654 - INFO - Result: {'account_name': 'Short Term Advance Account', 'probability': 0.6, 'reasoning': 'The term "advance" could imply a temporary arrangement, but it lacks specific indicators of related parties, making it suspicious.'}
+2024-12-05 15:18:15,654 - INFO - Result: {'account_name': 'Temporary Funding Account', 'probability': 0.6, 'reasoning': 'The term "temporary" suggests a potential personal use, but without clear ownership or relationship terms, it remains suspicious.'}
+2024-12-05 15:18:15,655 - INFO - Result: {'account_name': 'Corporate Development Fund', 'probability': 0.2, 'reasoning': 'This account appears to be business-related with no direct indicators of personal or related party transactions, making it unlikely to be Division 7A related.'}
+2024-12-05 15:18:15,655 - INFO - Result: {'account_name': "Owner's Draw", 'probability': 1.0, 'reasoning': 'This account directly indicates a transaction involving the owner, clearly representing a Division 7A loan or payment.'}
+2024-12-05 15:18:15,656 - INFO - === Results Map ===
+2024-12-05 15:18:15,656 - INFO - Number of mapped results: 13
+2024-12-05 15:18:15,657 - INFO - First few mapped accounts:
+2024-12-05 15:18:15,657 - INFO - Mapped account: Tesla Loan - Non-Current
+2024-12-05 15:18:24,237 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:18:24,237 - WARNING - API didn't return result for Owner's Draw, using default
+2024-12-05 15:18:24,237 - WARNING - API didn't return result for Directors Loan Account, using default
+2024-12-05 15:18:24,237 - WARNING - API didn't return result for Bank of China Ltd, using default
+2024-12-05 15:18:24,237 - WARNING - API didn't return result for Director Loan Receivable, using default
+2024-12-05 15:18:24,237 - WARNING - API didn't return result for Shareholder Advance, using default
+2024-12-05 15:18:24,251 - WARNING - API didn't return result for Loan to Controlled Entity, using default
+2024-12-05 15:18:24,251 - WARNING - API didn't return result for Investments - Tuas Limited, using default
+2024-12-05 15:18:24,251 - WARNING - API didn't return result for Loan, using default
+2024-12-05 15:18:24,251 - WARNING - API didn't return result for Loan to Director's Trust, using default
+2024-12-05 15:18:24,251 - WARNING - API didn't return result for cash at bank-cash management account 2, using default
+2024-12-05 15:18:24,252 - WARNING - API didn't return result for Investments - ASX Limited, using default
+2024-12-05 15:18:24,252 - WARNING - API didn't return result for Food, using default
+2024-12-05 15:18:24,252 - WARNING - API didn't return result for Petty Cash/Cash On Hand, using default
+2024-12-05 15:18:24,253 - WARNING - API didn't return result for Business Bank Account #1, using default
+2024-12-05 15:18:24,253 - WARNING - API didn't return result for Investments - Coles Group Limited., using default
+2024-12-05 15:18:24,253 - WARNING - API didn't return result for Loan to Beneficiary, using default
+2024-12-05 15:18:24,254 - WARNING - API didn't return result for Investments - Wesfarmers Limited, using default
+2024-12-05 15:18:24,254 - WARNING - API didn't return result for Cash At Bank - Westpac Cash Reserve, using default
+2024-12-05 15:18:24,254 - WARNING - API didn't return result for Anz, using default
+2024-12-05 15:18:24,255 - WARNING - API didn't return result for Less Accumulated Depreciation on Motor Vehicles, using default
+2024-12-05 15:18:24,255 - WARNING - API didn't return result for Loan to Business Owner, using default
+2024-12-05 15:18:24,255 - WARNING - API didn't return result for Accounts Receivable, using default
+2024-12-05 15:18:24,255 - WARNING - API didn't return result for Business Savings Account, using default
+2024-12-05 15:18:24,256 - WARNING - API didn't return result for Owner Advance Account, using default
+2024-12-05 15:18:24,256 - WARNING - API didn't return result for New Current Assets Bank test, using default
+2024-12-05 15:18:24,256 - WARNING - API didn't return result for Cash, using default
+2024-12-05 15:18:24,257 - WARNING - API didn't return result for Business Online Saver, using default
+2024-12-05 15:18:24,257 - WARNING - API didn't return result for Plant and Equipment, using default
+2024-12-05 15:18:24,257 - WARNING - API didn't return result for Cash and Cash Equivalents, using default
+2024-12-05 15:18:24,258 - WARNING - API didn't return result for Petty Cash - Staff Amenities, using default
+2024-12-05 15:18:24,258 - WARNING - API didn't return result for Director Financial Loan, using default
+2024-12-05 15:18:24,258 - WARNING - API didn't return result for Investments - Tpg Telecom Limited, using default
+2024-12-05 15:18:24,259 - WARNING - API didn't return result for Loan to Trustee, using default
+2024-12-05 15:18:24,259 - INFO - Detection results structure: [{'account_name': 'Business Development Loan', 'probability': 0.4, 'reasoning': 'Some indicators suggest potential related party transactions, but the term "Business Development" is vague and could refer to legitimate business activities.'}, {'account_name': 'Consulting Fees Receivable', 'probability': 0.2, 'reasoning': 'Unlikely to be Division 7A related as it appears to represent standard business income, though it may require attention for any hidden relationships.'}]
+2024-12-05 15:18:24,265 - INFO - Batch statistics:
+2024-12-05 15:18:24,265 - INFO - Average probability: 0.217
+2024-12-05 15:18:24,266 - INFO - Max probability: 1.000
+2024-12-05 15:18:24,266 - INFO - Min probability: 0.000
+2024-12-05 15:18:31,346 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:18:31,358 - INFO - === Detection Results ===
+2024-12-05 15:18:31,358 - INFO - Number of accounts sent: 48
+2024-12-05 15:18:31,358 - INFO - Number of results received: 13
+2024-12-05 15:18:31,359 - INFO - First few detection results:
+2024-12-05 15:18:31,359 - INFO - Result: {'account_name': 'Business Development Loan', 'probability': 0.4, 'reasoning': 'Some indicators suggest potential related party transactions, but the term "Business Development" is vague and could refer to legitimate business activities.'}
+2024-12-05 15:18:31,359 - INFO - Result: {'account_name': 'Consulting Fees Receivable', 'probability': 0.2, 'reasoning': 'Unlikely to be Division 7A related as it appears to represent standard business income rather than a loan or payment to related parties.'}
+2024-12-05 15:18:31,360 - INFO - Result: {'account_name': 'Private Company Advance', 'probability': 0.8, 'reasoning': 'The term "Private Company" suggests a likely relationship with shareholders or associates, indicating a high probability of Division 7A relevance.'}
+2024-12-05 15:18:31,360 - INFO - Result: {'account_name': 'Trust Beneficiary Account', 'probability': 0.6, 'reasoning': 'While it may involve related parties, the term "Trust Beneficiary" is vague and could mask personal transactions.'}
+2024-12-05 15:18:31,361 - INFO - Result: {'account_name': 'Management Participation Account', 'probability': 0.4, 'reasoning': 'Some indicators of potential related party transactions exist, but the term is ambiguous and does not clearly indicate Division 7A.'}
+2024-12-05 15:18:31,361 - INFO - === Results Map ===
+2024-12-05 15:18:31,362 - INFO - Number of mapped results: 13
+2024-12-05 15:18:31,362 - INFO - First few mapped accounts:
+2024-12-05 15:18:31,362 - INFO - Mapped account: Business Development Loan
+2024-12-05 15:18:38,270 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Bank, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Investments - Vanguard Australian Shares Index ETF - Exchange Traded Fund Units Fully Paid, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Accrued Revenue/Deferred Revenue #22, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Family Member Loan, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Investments - Facebook Inc, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Loan to Controlled Entity, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Loan to Associate, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for NAB Bank Account, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Director Loan Account, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for ABN Withholding Credits, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Food Expenses, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Owner Loan Receivable, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Family Member Advance, using default
+2024-12-05 15:18:38,270 - WARNING - API didn't return result for Investments - Demo Property, using default
+2024-12-05 15:18:38,284 - WARNING - API didn't return result for BF Westpac Bank Account, using default
+2024-12-05 15:18:38,284 - WARNING - API didn't return result for Building - 67 Church St, using default
+2024-12-05 15:18:38,284 - WARNING - API didn't return result for Investments - Snap Inc, using default
+2024-12-05 15:18:38,284 - WARNING - API didn't return result for General Cheque Account, using default
+2024-12-05 15:18:38,285 - WARNING - API didn't return result for AL Bank, using default
+2024-12-05 15:18:38,285 - WARNING - API didn't return result for Australia And New Zealand Banking Group Limited, using default
+2024-12-05 15:18:38,285 - WARNING - API didn't return result for Investments - UBS Property Securities Fund, using default
+2024-12-05 15:18:38,286 - WARNING - API didn't return result for Motor Vehicle Accum Dep'n, using default
+2024-12-05 15:18:38,286 - WARNING - API didn't return result for Cash At Bank - Macquarie CMA, using default
+2024-12-05 15:18:38,286 - WARNING - API didn't return result for CBA Bank Account, using default
+2024-12-05 15:18:38,287 - WARNING - API didn't return result for Cheque account, using default
+2024-12-05 15:18:38,287 - WARNING - API didn't return result for Prepayments, using default
+2024-12-05 15:18:38,287 - WARNING - API didn't return result for cash in bank general, using default
+2024-12-05 15:18:38,287 - WARNING - API didn't return result for Temporary Shareholder Loan, using default
+2024-12-05 15:18:38,288 - WARNING - API didn't return result for Equity Holder Financial Loan, using default
+2024-12-05 15:18:38,288 - WARNING - API didn't return result for Investments - Google Inc, using default
+2024-12-05 15:18:38,288 - WARNING - API didn't return result for Motor vehicles at cost, using default
+2024-12-05 15:18:38,289 - WARNING - API didn't return result for Loan to Controlling Shareholder, using default
+2024-12-05 15:18:38,289 - INFO - Detection results structure: [{'account_name': 'Current Account - J Smith', 'probability': 0.6, 'reasoning': 'The account name suggests a personal connection, potentially masking related party transactions.'}, {'account_name': 'Business Owner Advance', 'probability': 0.4, 'reasoning': 'While it indicates a loan to a business owner, the lack of specific identifiers makes it unclear if it relates to Division 7A.'}]
+2024-12-05 15:18:38,295 - INFO - Batch statistics:
+2024-12-05 15:18:38,295 - INFO - Average probability: 0.204
+2024-12-05 15:18:38,296 - INFO - Max probability: 1.000
+2024-12-05 15:18:38,296 - INFO - Min probability: 0.000
+2024-12-05 15:18:47,534 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 15:18:47,545 - INFO - === Detection Results ===
+2024-12-05 15:18:47,545 - INFO - Number of accounts sent: 48
+2024-12-05 15:18:47,546 - INFO - Number of results received: 13
+2024-12-05 15:18:47,546 - INFO - First few detection results:
+2024-12-05 15:18:47,546 - INFO - Result: {'account_name': 'Current Account - J Smith', 'probability': 0.4, 'reasoning': 'The account is named after an individual, suggesting potential personal use, but lacks clear indicators of a Division 7A arrangement.'}
+2024-12-05 15:18:47,547 - INFO - Result: {'account_name': 'Business Owner Advance', 'probability': 0.6, 'reasoning': 'The term "Owner" suggests a possible relationship, but the wording is vague and could mask personal use.'}
+2024-12-05 15:18:47,547 - INFO - Result: {'account_name': 'Owner Advance Account', 'probability': 0.6, 'reasoning': 'Similar to the previous account, it indicates a potential relationship but lacks specificity, raising suspicion of Division 7A implications.'}
+2024-12-05 15:18:47,548 - INFO - Result: {'account_name': 'Loan to Beneficiary Trust', 'probability': 0.8, 'reasoning': 'The term "Beneficiary" indicates a direct relationship, making it very likely to be related to Division 7A.'}
+2024-12-05 15:18:47,548 - INFO - Result: {'account_name': 'Shareholder Loan Facility', 'probability': 1.0, 'reasoning': 'This account directly references shareholders, making it definitely related to Division 7A loans.'}
+2024-12-05 15:18:47,548 - INFO - === Results Map ===
+2024-12-05 15:18:47,549 - INFO - Number of mapped results: 11
+2024-12-05 15:18:47,549 - INFO - First few mapped accounts:
+2024-12-05 15:18:47,549 - INFO - Mapped account: Current Account - J Smith
+2024-12-05 15:18:47,570 - INFO - Best parameters: {'debit_adjustment': 0.5, 'probability_threshold': 0.5, 'max_tokens': 500.0, 'batch_size': 50.0, 'precision': 1.0, 'recall': 0.4293043478260869, 'f1': 0.59822425940073, 'std_dev': 0.0593797415665887}
+2024-12-05 15:18:47,577 - INFO - 
+Misclassification Analysis for debit_0.5_thresh_0.5_tokens_500:
+2024-12-05 15:18:47,578 - INFO - Total accounts analyzed: 85
+2024-12-05 15:18:47,578 - INFO - Consistently misclassified accounts: 43
+2024-12-05 15:18:47,579 - INFO - Top 5 most consistently misclassified accounts:
+2024-12-05 15:18:47,585 - INFO -                         AccountName  MisclassificationRate  Balance SourceAccountType
+0   Special Purpose Vehicle Account                    1.0    500.0            Assets
+62       Consulting Fees Receivable                    1.0    500.0            Assets
+46       Corporate Development Fund                    1.0    500.0            Assets
+55        Partner Financial Advance                    1.0    500.0            Assets
+56                    Loan to Child                    1.0    500.0            Assets

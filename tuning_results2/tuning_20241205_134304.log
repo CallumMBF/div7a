@@ -1,0 +1,58 @@
+2024-12-05 13:43:04,792 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 13:43:05,128 - INFO - Initial data: 240 total accounts, 119 Division 7A accounts
+2024-12-05 13:43:05,137 - INFO - Filtered out 154 accounts. Details saved to 'filtered_out_accounts.csv'
+2024-12-05 13:43:05,143 - INFO - After filtering: 81 Division 7A accounts out of 86 total accounts
+2024-12-05 13:43:05,144 - INFO - 
+Examples of Division 7A accounts that were filtered out:
+2024-12-05 13:43:05,144 - INFO - Account: Tesla Loan - Non-Current
+2024-12-05 13:43:05,145 - INFO - SourceAccountType: 'Assets'
+2024-12-05 13:43:05,145 - INFO - AccountTypesName: 'Loans To Members'
+
+2024-12-05 13:43:05,145 - INFO - Account: Current Account - J Smith
+2024-12-05 13:43:05,145 - INFO - SourceAccountType: 'Assets'
+2024-12-05 13:43:05,145 - INFO - AccountTypesName: 'Loans To Members'
+
+2024-12-05 13:43:05,147 - INFO - Account: Short Term Advance Account
+2024-12-05 13:43:05,147 - INFO - SourceAccountType: 'Assets'
+2024-12-05 13:43:05,147 - INFO - AccountTypesName: 'Loans To Members'
+
+2024-12-05 13:43:05,148 - INFO - Account: Business Development Loan
+2024-12-05 13:43:05,148 - INFO - SourceAccountType: 'Assets'
+2024-12-05 13:43:05,149 - INFO - AccountTypesName: 'Loans To Members'
+
+2024-12-05 13:43:05,149 - INFO - Account: Temporary Funding Account
+2024-12-05 13:43:05,150 - INFO - SourceAccountType: 'Assets'
+2024-12-05 13:43:05,150 - INFO - AccountTypesName: 'Loans To Members'
+
+2024-12-05 13:43:05,150 - INFO - Testing combination 1/135: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'max_tokens': 500, 'batch_size': 200}
+2024-12-05 13:43:16,039 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 13:43:16,049 - INFO - Batch statistics:
+2024-12-05 13:43:16,049 - INFO - Average probability: 0.578
+2024-12-05 13:43:16,049 - INFO - Max probability: 1.000
+2024-12-05 13:43:16,050 - INFO - Min probability: 0.000
+2024-12-05 13:43:25,764 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 13:43:25,764 - INFO - Batch statistics:
+2024-12-05 13:43:25,764 - INFO - Average probability: 0.576
+2024-12-05 13:43:25,764 - INFO - Max probability: 1.000
+2024-12-05 13:43:25,764 - INFO - Min probability: 0.000
+2024-12-05 13:43:38,717 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 13:43:38,727 - INFO - Batch statistics:
+2024-12-05 13:43:38,727 - INFO - Average probability: 0.671
+2024-12-05 13:43:38,727 - INFO - Max probability: 1.000
+2024-12-05 13:43:38,727 - INFO - Min probability: 0.000
+2024-12-05 13:43:46,803 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 13:43:46,803 - INFO - Batch statistics:
+2024-12-05 13:43:46,803 - INFO - Average probability: 0.529
+2024-12-05 13:43:46,803 - INFO - Max probability: 1.000
+2024-12-05 13:43:46,803 - INFO - Min probability: 0.000
+2024-12-05 13:43:56,862 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 13:43:56,877 - INFO - Batch statistics:
+2024-12-05 13:43:56,877 - INFO - Average probability: 0.671
+2024-12-05 13:43:56,877 - INFO - Max probability: 1.000
+2024-12-05 13:43:56,877 - INFO - Min probability: 0.000
+2024-12-05 13:43:56,889 - INFO - Testing combination 2/135: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'max_tokens': 500, 'batch_size': 300}
+2024-12-05 13:44:05,577 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 13:44:05,598 - INFO - Batch statistics:
+2024-12-05 13:44:05,598 - INFO - Average probability: 0.578
+2024-12-05 13:44:05,598 - INFO - Max probability: 1.000
+2024-12-05 13:44:05,598 - INFO - Min probability: 0.000

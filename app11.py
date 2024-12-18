@@ -44,14 +44,13 @@ class LoanAssessmentApp:
             - 0.6 = Suspicious - vaguely worded but likely masking Division 7A
             - 0.4 = Some Division 7A indicators but unclear
             - 0.2 = Unlikely Division 7A related but requires attention
-            - 0.0 = Definitely not Division 7A related
 
             Accounts to analyze:
             {account_list}
 
             Provide responses in the following format for each account:
             Account: [account name]
-            Probability: [0.0-1.0]
+            Probability: [0.2-1.0]
             Reasoning: [One clear sentence explaining the probability assignment and any masking concerns]
             ---
             """
@@ -60,7 +59,7 @@ class LoanAssessmentApp:
         """Check if the account combination requires Division 7A analysis"""
         return (source_account_type, account_types_name) in self.check_combinations
     
-    def detect_loans_batch(self, accounts, batch_size=5):
+    def detect_loans_batch(self, accounts, batch_size=50):
         """Process multiple accounts in batches for loan detection"""
         results = []
         
@@ -78,7 +77,7 @@ class LoanAssessmentApp:
                         {"role": "system", "content": "You are a financial classification expert."},
                         {"role": "user", "content": self.loan_detection_prompt.format(account_list=account_list)}
                     ],
-                    max_tokens=100,
+                    max_tokens=1000,
                     temperature=0
                 )
                 
@@ -86,8 +85,10 @@ class LoanAssessmentApp:
                 result_text = response.choices[0].message.content.strip()
                 account_results = self._parse_batch_response(result_text)
                 
-                # Match results with original accounts
+                # Match results with original accounts and add debug logging
                 for account, result in zip(batch, account_results):
+                    print(f"Processing account: {account}")  # Debug log
+                    print(f"Raw result: {result}")  # Debug log
                     results.append({
                         'account_name': account,
                         'probability': result.get('probability', 0.0),
@@ -95,6 +96,7 @@ class LoanAssessmentApp:
                     })
                     
             except Exception as e:
+                print(f"Error processing batch: {str(e)}")  # Debug log
                 # Handle errors by adding default results for the batch
                 for account in batch:
                     results.append({
@@ -187,30 +189,26 @@ def check_div7a_status(account_type, balance, workpaper_record, initial_probabil
     
     # Check for existing Division 7A documentation
     if any(term in workpaper_record for term in ['div 7a', 'division 7a', 'div. 7a', 'div7a']):
-        return 1.0, "Div 7A reconciliation worksheet already attached", False
+        return 1.0, "Div 7A reconciliation worksheet already attached", True
     
     # Adjust probability based on account type and balance
     if account_type == 'liabilities':
         if balance > 0:  # Debited liability
-            probability = min(probability + 0.2, 1)  # Increase probability significantly for debit balance
-            
-            if probability >= 0.6:
-                status = "Liability account with debit balance - high probability of Division 7A implication"
-            else:
-                status = "Liability account with debit balance - low probability of Division 7A implication"
+            probability = min(probability + 0.1, 1)  # Increase probability for debit balance
+            status = "Liability account with debit balance - high probability of Division 7A implication"
         else:  # Credited liability
-            probability = min(probability, 0)  # no div 7A
-            status = "Liability account with credit balance - not likely to be a Division 7A loan"    
+            # Don't reset probability to 0, just use the initial probability
+            status = "Liability account with credit balance - review based on other factors"
     elif account_type in ('assets', 'equity'):
-        if probability >= 0.6:
+        if probability >= 0.4:
             status = "Potential Division 7A loan - review recommended"
         else:
-            status = "Not likely to be a Division 7A loan"
+            status = "Low probability of Division 7A loan"
     else:
         status = "Account type unclear - review needed"
     
     # Determine if warning is needed based on probability
-    needs_warning = probability >= 0.6
+    needs_warning = probability >= 0.4
     
     return probability, status, needs_warning
 
@@ -248,6 +246,7 @@ def main():
             ), axis=1)
         ]
         
+        
         st.write(f"Found {len(accounts_to_check)} accounts to check for Division 7A")
         
         # Batch process the loan detection
@@ -282,7 +281,7 @@ def main():
                 if result['Requires_Warning']:
                     status_color = 'red'
                     status_emoji = "⚠️"
-                elif result['Final_Probability'] >= 0.6:
+                elif result['Final_Probability'] >= 0.4:
                     status_color = 'orange'
                     status_emoji = "ℹ️"
                 else:

@@ -1,0 +1,28 @@
+{
+  "timestamp": "20241205_151847",
+  "total_combinations": 1,
+  "best_parameters": {
+    "debit_adjustment": 0.5,
+    "probability_threshold": 0.5,
+    "max_tokens": 500.0,
+    "batch_size": 50.0,
+    "precision": 1.0,
+    "recall": 0.4293043478260869,
+    "f1": 0.59822425940073,
+    "std_dev": 0.0593797415665887
+  },
+  "parameter_ranges": {
+    "debit_adjustment": [
+      0.5
+    ],
+    "probability_threshold": [
+      0.5
+    ],
+    "max_tokens": [
+      500
+    ],
+    "batch_size": [
+      50
+    ]
+  }
+}

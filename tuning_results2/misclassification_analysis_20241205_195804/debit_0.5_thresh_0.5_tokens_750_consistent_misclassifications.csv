@@ -1,0 +1,23 @@
+AccountName,MisclassificationRate,MisclassificationCount,TotalAppearances,SourceAccountType,SourceAccountSubType,AccountTypesName,LedgerSide,Balance,WorkpaperRecordsName,WorksheetName,GroundTruth
+Special Purpose Vehicle Account,1.0,3,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Distribution Account Payable,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Loan to Business Owner,1.0,3,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Director Loan Receivable,1.0,3,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Management Participation Account,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Consulting Fees Receivable,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Business Development Loan,1.0,3,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Inter-Company Loan,1.0,3,3,Assets,Current Assets,Other Assets,1,222683.05,,,1
+Principal Owner Loan,1.0,3,3,Assets,Current Assets,Other Assets,1,500.0,,,1
+Corporate Development Fund,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Tesla Loan - Non-Current,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Shareholder Borrowing Account,1.0,3,3,Assets,Current Assets,Other Assets,1,466338.88,,,1
+Private Advance Account,1.0,6,6,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Special Drawing Rights,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Working Capital Advance,1.0,3,3,Assets,Current Assets,Loans to Members,1,500.0,,,1
+Loan to Parent Trust,1.0,3,3,Assets,Current Assets,Other Assets,1,120172.29,,,1
+Owner's Equity Withdrawal,1.0,3,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Loan to Affiliate,1.0,3,3,Assets,Current Assets,Other Assets,-1,500.0,,,1
+Car Loan - Non-Current,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Internal Funding Account,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Entity B Current Account,1.0,3,3,Assets,Current Assets,Loans to Members,-1,500.0,,,1
+Owner Loan Receivable,1.0,3,3,Assets,Current Assets,Other Assets,-1,500.0,,,1

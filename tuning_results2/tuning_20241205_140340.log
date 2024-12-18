@@ -1,0 +1,21 @@
+2024-12-05 14:03:40,523 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 14:03:40,863 - INFO - Initial data: 240 total accounts, 119 Division 7A accounts
+2024-12-05 14:03:40,863 - INFO - Filtered out 0 accounts. Details saved to 'filtered_out_accounts.csv'
+2024-12-05 14:03:40,875 - INFO - After filtering: 119 Division 7A accounts out of 240 total accounts
+2024-12-05 14:03:40,875 - INFO - Testing combination 1/135: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'max_tokens': 500, 'batch_size': 200}
+2024-12-05 14:03:49,581 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 14:03:49,597 - INFO - Batch statistics:
+2024-12-05 14:03:49,597 - INFO - Average probability: 0.188
+2024-12-05 14:03:49,597 - INFO - Max probability: 1.000
+2024-12-05 14:03:49,597 - INFO - Min probability: 0.000
+2024-12-05 14:03:57,894 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 14:03:57,909 - INFO - Batch statistics:
+2024-12-05 14:03:57,909 - INFO - Average probability: 0.217
+2024-12-05 14:03:57,909 - INFO - Max probability: 1.000
+2024-12-05 14:03:57,909 - INFO - Min probability: 0.000
+2024-12-05 14:04:06,816 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 14:04:06,832 - INFO - Batch statistics:
+2024-12-05 14:04:06,832 - INFO - Average probability: 0.208
+2024-12-05 14:04:06,832 - INFO - Max probability: 1.000
+2024-12-05 14:04:06,832 - INFO - Min probability: 0.000
+2024-12-05 14:04:16,909 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

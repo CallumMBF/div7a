@@ -21,11 +21,15 @@ class Div7ATuner:
         
         self.param_grid = {
             'debit_adjustment': [0.1, 0.2, 0.3, 0.4, 0.5],
-            'probability_threshold': [0.5, 0.6, 0.7, 0.8],
-            'batch_size': [10]
+            'probability_threshold': [0.4, 0.5, 0.6],
+            'max_tokens': [500, 750, 1000],
+            'batch_size': [50, 75, 100]  # Smaller batch sizes
         }
         
+        # Track misclassified accounts across folds
+        self.misclassified_accounts = {}
         self._setup_logging()
+        
         
     def _setup_logging(self):
         log_path = self.output_dir / f"tuning_{datetime.now():%Y%m%d_%H%M%S}.log"
@@ -39,11 +43,27 @@ class Div7ATuner:
         logging.info(f"Loading data from {self.data_path}")
         df = pd.read_excel(self.data_path)
         
-        required_cols = ['AccountName', 'Balance', 'SourceAccountType', 'AccountTypesName']
-        missing_cols = [col for col in required_cols if col not in df.columns]
-        if missing_cols:
-            raise ValueError(f"Missing columns: {', '.join(missing_cols)}")
+        # Log initial counts
+        logging.info(f"Initial data: {len(df)} total accounts, {df['GroundTruth'].sum()} Division 7A accounts")
         
+        # Clean any leading/trailing spaces in relevant columns
+        df['SourceAccountType'] = df['SourceAccountType'].str.strip()
+        df['AccountTypesName'] = df['AccountTypesName'].str.strip()
+        
+        # Get filtered out accounts
+        filtered_out = df[~df.apply(
+            lambda row: self.loan_app.requires_div7a_check(
+                row['SourceAccountType'],
+                row.get('AccountTypesName', '')
+            ),
+            axis=1
+        )]
+        
+        # Save filtered out accounts to CSV for inspection
+        filtered_out.to_csv('filtered_out_accounts.csv', index=False)
+        logging.info(f"Filtered out {len(filtered_out)} accounts. Details saved to 'filtered_out_accounts.csv'")
+        
+        # Get filtered in accounts
         filtered_df = df[df.apply(
             lambda row: self.loan_app.requires_div7a_check(
                 row['SourceAccountType'],
@@ -52,28 +72,179 @@ class Div7ATuner:
             axis=1
         )].copy()
         
-        filtered_df['GroundTruth'] = 1  # All filtered accounts are warnings for tuning
+        # Add logging to see distribution of true labels
+        pos_count = filtered_df['GroundTruth'].sum()
+        total_count = len(filtered_df)
+        logging.info(f"After filtering: {pos_count} Division 7A accounts out of {total_count} total accounts")
+        
+        # Log some examples of filtered out Div7A accounts
+        filtered_out_div7a = filtered_out[filtered_out['GroundTruth'] == 1]
+        if not filtered_out_div7a.empty:
+            logging.info("\nExamples of Division 7A accounts that were filtered out:")
+            for _, row in filtered_out_div7a.head().iterrows():
+                logging.info(f"Account: {row['AccountName']}")
+                logging.info(f"SourceAccountType: '{row['SourceAccountType']}'")
+                logging.info(f"AccountTypesName: '{row['AccountTypesName']}'\n")
+
         return filtered_df
 
+    
     def process_batch(self, accounts: pd.DataFrame, params: Dict) -> List[float]:
+        # Override the max_tokens in the loan_app's detect_loans_batch method
+        original_detect_loans_batch = self.loan_app.detect_loans_batch
+
+        def modified_detect_loans_batch(account_list, batch_size):
+            detection_results = []
+            
+            # Process accounts in smaller batches
+            for i in range(0, len(account_list), batch_size):
+                batch = account_list[i:i + batch_size]
+                
+                # Format account list for the prompt
+                account_list_str = "\n".join([f"- {account}" for account in batch])
+                
+                try:
+                    response = self.loan_app.client.chat.completions.create(
+                        model="gpt-4o-mini",
+                        messages=[
+                            {"role": "system", "content": "You are a financial classification expert. For EACH account in the list, provide an assessment."},
+                            {"role": "user", "content": f"{self.loan_app.loan_detection_prompt.format(account_list=account_list_str)}\nIMPORTANT: Provide an assessment for EVERY account in the list."}
+                        ],
+                        max_tokens=params['max_tokens'],
+                        temperature=0
+                    )
+                    
+                    result_text = response.choices[0].message.content.strip()
+                    batch_results = self.loan_app._parse_batch_response(result_text)
+                    
+                    # Verify we got results for all accounts in the batch
+                    received_accounts = {r['account_name'] for r in batch_results}
+                    missing_accounts = set(batch) - received_accounts
+                    
+                    # Add default results for any missing accounts
+                    for account in missing_accounts:
+                        logging.warning(f"API didn't return result for {account}, using default")
+                        batch_results.append({
+                            'account_name': account,
+                            'probability': 0.0,
+                            'reasoning': 'No assessment provided by API'
+                        })
+                        
+                    detection_results.extend(batch_results)
+                    
+                except Exception as e:
+                    logging.error(f"Error processing batch: {str(e)}")
+                    # Handle errors by adding default results for the batch
+                    for account in batch:
+                        detection_results.append({
+                            'account_name': account,
+                            'probability': 0.0,
+                            'reasoning': f'Error: {str(e)}'
+                        })
+            
+            return detection_results
+        
+        # Temporarily replace the detect_loans_batch method
+        self.loan_app.detect_loans_batch = modified_detect_loans_batch
+        
+        # Process the accounts with the modified method
         detection_results = self.loan_app.detect_loans_batch(
             accounts['AccountName'].tolist(),
             batch_size=params['batch_size']
         )
         
+        # Restore the original method
+        self.loan_app.detect_loans_batch = original_detect_loans_batch
+        
+        # Add debug logging for detection_results
+        logging.info(f"Detection results structure: {detection_results[:2]}")  # Show first 2 results
+        
         results_map = {r['account_name']: r for r in detection_results}
         adjusted_probs = []
         
         for _, account in accounts.iterrows():
-            result = results_map.get(account['AccountName'], {'probability': 0.0})
-            prob = result['probability']
+            account_name = account['AccountName']
+            result = results_map.get(account_name)
+            
+            if result is None:
+                logging.error(f"No result found for account: {account_name}")
+                prob = 0.0
+            else:
+                try:
+                    prob = result.get('probability', 0.0)
+                    logging.debug(f"Account: {account_name}, Result structure: {result}")
+                except Exception as e:
+                    logging.error(f"Error processing result for {account_name}: {str(e)}")
+                    logging.error(f"Result structure: {result}")
+                    prob = 0.0
             
             if account['SourceAccountType'].lower() == 'liabilities' and account['Balance'] > 0:
                 prob = min(1.0, prob + params['debit_adjustment'])
             
             adjusted_probs.append(prob)
+            
+            # Add debugging logs
+            logging.debug(f"Account: {account_name}")
+            logging.debug(f"Initial probability: {prob}")
+            logging.debug(f"Adjusted probability: {prob}")
         
-        return adjusted_probs
+        # Add summary statistics
+        logging.info(f"Batch statistics:")
+        logging.info(f"Average probability: {np.mean(adjusted_probs):.3f}")
+        logging.info(f"Max probability: {max(adjusted_probs):.3f}")
+        logging.info(f"Min probability: {min(adjusted_probs):.3f}")
+
+        detection_results = self.loan_app.detect_loans_batch(
+        accounts['AccountName'].tolist(),
+        batch_size=params['batch_size']
+        )
+    
+        # Add this debug logging right after getting detection_results
+        logging.info("=== Detection Results ===")
+        logging.info(f"Number of accounts sent: {len(accounts)}")
+        logging.info(f"Number of results received: {len(detection_results)}")
+        logging.info("First few detection results:")
+        for result in detection_results[:5]:
+            logging.info(f"Result: {result}")
+        
+        results_map = {r['account_name']: r for r in detection_results}
+        logging.info("=== Results Map ===")
+        logging.info(f"Number of mapped results: {len(results_map)}")
+        logging.info("First few mapped accounts:")
+        for key in list(results_map.keys())[:5]:
+            logging.info(f"Mapped account: {key}")
+            
+            return adjusted_probs
+
+
+    def track_misclassifications(self, accounts: pd.DataFrame, predictions: List[int], 
+                               actuals: List[int], params: Dict):
+        """Track consistently misclassified accounts for each parameter combination"""
+        param_key = (f"debit_{params['debit_adjustment']}_thresh_{params['probability_threshold']}"
+                    f"_tokens_{params['max_tokens']}")
+        
+        if param_key not in self.misclassified_accounts:
+            self.misclassified_accounts[param_key] = {}
+            
+        for idx, (pred, actual) in enumerate(zip(predictions, actuals)):
+            account_name = accounts.iloc[idx]['AccountName']
+            if actual == 1 and pred == 0:  # False negative
+                if account_name not in self.misclassified_accounts[param_key]:
+                    self.misclassified_accounts[param_key][account_name] = {
+                        'misclassification_count': 0,
+                        'total_appearances': 0,
+                        'account_details': accounts.iloc[idx].to_dict()
+                    }
+                self.misclassified_accounts[param_key][account_name]['misclassification_count'] += 1
+            
+            if actual == 1:  # Track total appearances for true positives
+                if account_name not in self.misclassified_accounts[param_key]:
+                    self.misclassified_accounts[param_key][account_name] = {
+                        'misclassification_count': 0,
+                        'total_appearances': 0,
+                        'account_details': accounts.iloc[idx].to_dict()
+                    }
+                self.misclassified_accounts[param_key][account_name]['total_appearances'] += 1
 
     def evaluate_params(self, df: pd.DataFrame, params: Dict) -> Dict:
         kf = KFold(n_splits=5, shuffle=True, random_state=42)
@@ -84,18 +255,63 @@ class Div7ATuner:
             
             probabilities = self.process_batch(val_df, params)
             predictions = [1 if p >= params['probability_threshold'] else 0 for p in probabilities]
-            actuals = [1] * len(val_df)
+            actuals = val_df['GroundTruth'].tolist()
             
-            metrics['precision'].append(precision_score(actuals, predictions))
-            metrics['recall'].append(recall_score(actuals, predictions))
-            metrics['f1'].append(f1_score(actuals, predictions))
+            # Track misclassifications for this fold
+            self.track_misclassifications(val_df, predictions, actuals, params)
             
+            metrics['precision'].append(precision_score(actuals, predictions, zero_division=0))
+            metrics['recall'].append(recall_score(actuals, predictions, zero_division=0))
+            metrics['f1'].append(f1_score(actuals, predictions, zero_division=0))
+        
         return {
             'precision': np.mean(metrics['precision']),
             'recall': np.mean(metrics['recall']),
             'f1': np.mean(metrics['f1']),
             'std_dev': np.std(metrics['f1'])
         }
+    
+    def analyze_misclassifications(self):
+        """Analyze and save consistently misclassified accounts"""
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        analysis_path = self.output_dir / f"misclassification_analysis_{timestamp}"
+        analysis_path.mkdir(exist_ok=True)
+        
+        for param_key, accounts in self.misclassified_accounts.items():
+            records = []
+            for account_name, data in accounts.items():
+                misclassification_rate = (data['misclassification_count'] / 
+                                        data['total_appearances'] if data['total_appearances'] > 0 else 0)
+                
+                record = {
+                    'AccountName': account_name,
+                    'MisclassificationRate': misclassification_rate,
+                    'MisclassificationCount': data['misclassification_count'],
+                    'TotalAppearances': data['total_appearances'],
+                    **data['account_details']
+                }
+                records.append(record)
+            
+            df = pd.DataFrame(records)
+            
+            # Filter for consistently misclassified accounts
+            consistent_misclassifications = df[df['MisclassificationRate'] >= 0.8].sort_values(
+                'MisclassificationRate', ascending=False)
+            
+            # Save results
+            df.to_csv(analysis_path / f"{param_key}_all_misclassifications.csv", index=False)
+            consistent_misclassifications.to_csv(
+                analysis_path / f"{param_key}_consistent_misclassifications.csv", index=False)
+            
+            # Log summary statistics
+            logging.info(f"\nMisclassification Analysis for {param_key}:")
+            logging.info(f"Total accounts analyzed: {len(df)}")
+            logging.info(f"Consistently misclassified accounts: {len(consistent_misclassifications)}")
+            logging.info("Top 5 most consistently misclassified accounts:")
+            logging.info(consistent_misclassifications.head()[
+                ['AccountName', 'MisclassificationRate', 'Balance', 'SourceAccountType']
+            ].to_string())
+
 
     def run_tuning(self) -> pd.DataFrame:
         df = self.load_data()
@@ -112,6 +328,10 @@ class Div7ATuner:
         
         results_df = pd.DataFrame(results)
         self.save_results(results_df)
+        
+        # Analyze misclassifications after all evaluations
+        self.analyze_misclassifications()
+        
         return results_df
 
     def save_results(self, results_df: pd.DataFrame):
@@ -133,6 +353,7 @@ class Div7ATuner:
             json.dump(summary, f, indent=2)
         
         logging.info(f"Best parameters: {best_params}")
+
 
 def main():
     data_path = "C:\\Users\\CallumMatchett\\python\\streamlit\\div7a\\MOCKTB2.xlsx"

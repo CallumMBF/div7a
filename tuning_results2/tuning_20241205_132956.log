@@ -1,0 +1,8 @@
+2024-12-05 13:29:56,547 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 13:29:56,856 - INFO - Found 81 Division 7A accounts out of 86 total accounts
+2024-12-05 13:29:56,872 - INFO - Testing combination 1/135: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'max_tokens': 500, 'batch_size': 200}
+2024-12-05 13:30:05,485 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 13:30:05,501 - INFO - Batch statistics:
+2024-12-05 13:30:05,501 - INFO - Average probability: 0.600
+2024-12-05 13:30:05,501 - INFO - Max probability: 1.000
+2024-12-05 13:30:05,501 - INFO - Min probability: 0.000

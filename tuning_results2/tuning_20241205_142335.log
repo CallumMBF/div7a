@@ -1,0 +1,15 @@
+2024-12-05 14:23:35,601 - INFO - Loading data from C:\Users\CallumMatchett\python\streamlit\div7a\MOCKTB2.xlsx
+2024-12-05 14:23:35,913 - INFO - Initial data: 240 total accounts, 119 Division 7A accounts
+2024-12-05 14:23:35,913 - INFO - Filtered out 0 accounts. Details saved to 'filtered_out_accounts.csv'
+2024-12-05 14:23:35,930 - INFO - After filtering: 119 Division 7A accounts out of 240 total accounts
+2024-12-05 14:23:35,931 - INFO - Testing combination 1/135: {'debit_adjustment': 0.1, 'probability_threshold': 0.4, 'max_tokens': 500, 'batch_size': 200}
+2024-12-05 14:23:44,309 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 14:23:44,325 - INFO - Batch statistics:
+2024-12-05 14:23:44,325 - INFO - Average probability: 0.192
+2024-12-05 14:23:44,325 - INFO - Max probability: 1.000
+2024-12-05 14:23:44,325 - INFO - Min probability: 0.000
+2024-12-05 14:23:53,850 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-05 14:23:53,866 - INFO - Batch statistics:
+2024-12-05 14:23:53,866 - INFO - Average probability: 0.246
+2024-12-05 14:23:53,866 - INFO - Max probability: 1.000
+2024-12-05 14:23:53,866 - INFO - Min probability: 0.000
